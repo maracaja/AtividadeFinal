@@ -1,271 +1,477 @@
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.cpp \
- /usr/include/stdc-predef.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLExternal.hpp \
- /usr/include/GL/glew.h /usr/include/c++/12/cstddef \
- /usr/include/c++/12/x86_64-suse-linux/bits/c++config.h \
- /usr/include/bits/wordsize.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/os_defines.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
- /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-64.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/cpu_defines.h \
- /usr/include/c++/12/pstl/pstl_config.h \
- /usr/lib64/gcc/x86_64-suse-linux/12/include/stddef.h \
- /usr/include/c++/12/cstdint \
- /usr/lib64/gcc/x86_64-suse-linux/12/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
- /usr/include/bits/types.h /usr/include/bits/typesizes.h \
- /usr/include/bits/time64.h /usr/include/bits/wchar.h \
- /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/GL/glu.h /usr/include/GL/gl.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgShader.hpp \
- /usr/include/c++/12/optional /usr/include/c++/12/type_traits \
- /usr/include/c++/12/exception /usr/include/c++/12/bits/exception.h \
- /usr/include/c++/12/bits/exception_ptr.h \
- /usr/include/c++/12/bits/exception_defines.h \
- /usr/include/c++/12/bits/cxxabi_init_exception.h \
- /usr/include/c++/12/typeinfo /usr/include/c++/12/bits/hash_bytes.h \
- /usr/include/c++/12/new /usr/include/c++/12/bits/move.h \
- /usr/include/c++/12/bits/nested_exception.h \
- /usr/include/c++/12/initializer_list \
- /usr/include/c++/12/bits/enable_special_members.h \
- /usr/include/c++/12/bits/functional_hash.h \
- /usr/include/c++/12/bits/stl_construct.h \
- /usr/include/c++/12/bits/stl_iterator_base_types.h \
- /usr/include/c++/12/bits/iterator_concepts.h \
- /usr/include/c++/12/concepts /usr/include/c++/12/bits/ptr_traits.h \
- /usr/include/c++/12/bits/ranges_cmp.h \
- /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/12/bits/concept_check.h \
- /usr/include/c++/12/debug/assertions.h \
- /usr/include/c++/12/bits/utility.h /usr/include/c++/12/compare \
- /usr/include/c++/12/bits/invoke.h /usr/include/c++/12/string \
- /usr/include/c++/12/bits/stringfwd.h \
- /usr/include/c++/12/bits/memoryfwd.h \
- /usr/include/c++/12/bits/char_traits.h \
- /usr/include/c++/12/bits/postypes.h /usr/include/c++/12/cwchar \
- /usr/include/wchar.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h \
- /usr/lib64/gcc/x86_64-suse-linux/12/include/stdarg.h \
- /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
- /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h \
- /usr/include/c++/12/bits/allocator.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/c++allocator.h \
- /usr/include/c++/12/bits/new_allocator.h \
- /usr/include/c++/12/bits/functexcept.h \
- /usr/include/c++/12/bits/cpp_type_traits.h \
- /usr/include/c++/12/bits/localefwd.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/c++locale.h \
- /usr/include/c++/12/clocale /usr/include/locale.h \
- /usr/include/bits/locale.h /usr/include/c++/12/iosfwd \
- /usr/include/c++/12/cctype /usr/include/ctype.h \
- /usr/include/bits/endian.h /usr/include/bits/endianness.h \
- /usr/include/c++/12/bits/ostream_insert.h \
- /usr/include/c++/12/bits/cxxabi_forced.h \
- /usr/include/c++/12/bits/stl_iterator.h \
- /usr/include/c++/12/ext/type_traits.h \
- /usr/include/c++/12/bits/stl_function.h \
- /usr/include/c++/12/backward/binders.h \
- /usr/include/c++/12/ext/numeric_traits.h \
- /usr/include/c++/12/bits/stl_algobase.h \
- /usr/include/c++/12/bits/stl_pair.h /usr/include/c++/12/debug/debug.h \
- /usr/include/c++/12/bits/predefined_ops.h \
- /usr/include/c++/12/bits/refwrap.h \
- /usr/include/c++/12/bits/range_access.h \
- /usr/include/c++/12/bits/basic_string.h \
- /usr/include/c++/12/ext/alloc_traits.h \
- /usr/include/c++/12/bits/alloc_traits.h /usr/include/c++/12/string_view \
- /usr/include/c++/12/bits/ranges_base.h \
- /usr/include/c++/12/bits/max_size_type.h /usr/include/c++/12/numbers \
- /usr/include/c++/12/bits/string_view.tcc \
- /usr/include/c++/12/ext/string_conversions.h /usr/include/c++/12/cstdlib \
- /usr/include/stdlib.h /usr/include/bits/waitflags.h \
- /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
- /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \
- /usr/include/bits/types/time_t.h /usr/include/bits/types/timer_t.h \
- /usr/include/endian.h /usr/include/bits/byteswap.h \
- /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
- /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
- /usr/include/bits/types/__sigset_t.h \
- /usr/include/bits/types/struct_timeval.h \
- /usr/include/bits/types/struct_timespec.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
- /usr/include/bits/pthreadtypes-arch.h \
- /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
- /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
- /usr/include/c++/12/bits/std_abs.h /usr/include/c++/12/cstdio \
- /usr/include/stdio.h /usr/include/bits/types/__fpos_t.h \
- /usr/include/bits/types/__fpos64_t.h \
- /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/bits/stdio.h \
- /usr/include/c++/12/cerrno /usr/include/errno.h \
- /usr/include/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
- /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
- /usr/include/c++/12/bits/charconv.h \
- /usr/include/c++/12/bits/basic_string.tcc /usr/include/c++/12/vector \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgApplication.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/itertools.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/accumulate.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
- /usr/include/c++/12/cassert /usr/include/assert.h \
- /usr/include/c++/12/functional /usr/include/c++/12/tuple \
- /usr/include/c++/12/bits/uses_allocator.h \
- /usr/include/c++/12/bits/std_function.h \
- /usr/include/c++/12/unordered_map \
- /usr/include/c++/12/ext/aligned_buffer.h \
- /usr/include/c++/12/bits/hashtable.h \
- /usr/include/c++/12/bits/hashtable_policy.h \
- /usr/include/c++/12/bits/node_handle.h \
- /usr/include/c++/12/bits/unordered_map.h \
- /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/array \
- /usr/include/c++/12/bits/stl_algo.h \
- /usr/include/c++/12/bits/algorithmfwd.h \
- /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_tempbuf.h \
- /usr/include/c++/12/bits/uniform_int_dist.h /usr/include/c++/12/variant \
- /usr/include/c++/12/bits/parse_numbers.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iterbase.hpp \
- /usr/include/c++/12/iterator /usr/include/c++/12/bits/stream_iterator.h \
- /usr/include/c++/12/bits/streambuf_iterator.h \
- /usr/include/c++/12/streambuf /usr/include/c++/12/bits/ios_base.h \
- /usr/include/c++/12/ext/atomicity.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/gthr.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
- /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
- /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
- /usr/include/bits/types/struct_tm.h \
- /usr/include/bits/types/struct_itimerspec.h /usr/include/bits/setjmp.h \
- /usr/include/bits/types/struct___jmp_buf_tag.h \
- /usr/include/bits/pthread_stack_min-dynamic.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/atomic_word.h \
- /usr/include/sys/single_threaded.h \
- /usr/include/c++/12/bits/locale_classes.h \
- /usr/include/c++/12/bits/locale_classes.tcc \
- /usr/include/c++/12/system_error \
- /usr/include/c++/12/x86_64-suse-linux/bits/error_constants.h \
- /usr/include/c++/12/stdexcept /usr/include/c++/12/bits/streambuf.tcc \
- /usr/include/c++/12/utility /usr/include/c++/12/bits/stl_relops.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iterbase.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/batched.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iteratoriterator.hpp \
- /usr/include/c++/12/algorithm /usr/include/c++/12/bits/ranges_algo.h \
- /usr/include/c++/12/bits/ranges_algobase.h \
- /usr/include/c++/12/bits/ranges_util.h \
- /usr/include/c++/12/pstl/glue_algorithm_defs.h \
- /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/memory \
- /usr/include/c++/12/bits/stl_raw_storage_iter.h \
- /usr/include/c++/12/bits/align.h /usr/include/c++/12/bit \
- /usr/include/c++/12/bits/unique_ptr.h /usr/include/c++/12/ostream \
- /usr/include/c++/12/ios /usr/include/c++/12/bits/basic_ios.h \
- /usr/include/c++/12/bits/locale_facets.h /usr/include/c++/12/cwctype \
- /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/ctype_base.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/ctype_inline.h \
- /usr/include/c++/12/bits/locale_facets.tcc \
- /usr/include/c++/12/bits/basic_ios.tcc \
- /usr/include/c++/12/bits/ostream.tcc \
- /usr/include/c++/12/bits/shared_ptr.h \
- /usr/include/c++/12/bits/shared_ptr_base.h \
- /usr/include/c++/12/bits/allocated_ptr.h \
- /usr/include/c++/12/ext/concurrence.h \
- /usr/include/c++/12/bits/shared_ptr_atomic.h \
- /usr/include/c++/12/bits/atomic_base.h \
- /usr/include/c++/12/bits/atomic_lockfree_defines.h \
- /usr/include/c++/12/bits/atomic_wait.h /usr/include/c++/12/climits \
- /usr/lib64/gcc/x86_64-suse-linux/12/include-fixed/limits.h \
- /usr/lib64/gcc/x86_64-suse-linux/12/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/syscall.h \
- /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
- /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
- /usr/include/c++/12/bits/std_mutex.h \
- /usr/include/c++/12/backward/auto_ptr.h \
- /usr/include/c++/12/bits/ranges_uninitialized.h \
- /usr/include/c++/12/bits/uses_allocator_args.h \
- /usr/include/c++/12/pstl/glue_memory_defs.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/chain.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iter_tuples.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/chunked.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/combinations.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/combinations_with_replacement.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/compress.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/count.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/range.hpp \
- /usr/include/c++/12/limits \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/cycle.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/dropwhile.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/filter.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/enumerate.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/filterfalse.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/groupby.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/imap.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/starmap.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/zip.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/permutations.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/powerset.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/product.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/repeat.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/reversed.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/slice.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/sliding_window.hpp \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_deque.h \
- /usr/include/c++/12/bits/deque.tcc \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/sorted.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/takewhile.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/unique_everseen.hpp \
- /usr/include/c++/12/unordered_set \
- /usr/include/c++/12/bits/unordered_set.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/unique_justseen.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/fmt/core.h \
- /usr/include/c++/12/cstring /usr/include/string.h /usr/include/strings.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_algorithm \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_assert \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/span \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_byte \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_util \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/multi_span \
- /usr/include/c++/12/numeric /usr/include/c++/12/bits/stl_numeric.h \
- /usr/include/c++/12/pstl/glue_numeric_defs.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/pointers \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/string_span \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/span_ext \
- /usr/include/c++/12/filesystem /usr/include/c++/12/bits/fs_fwd.h \
- /usr/include/c++/12/bits/chrono.h /usr/include/c++/12/ratio \
- /usr/include/c++/12/ctime /usr/include/c++/12/bits/fs_path.h \
- /usr/include/c++/12/locale \
- /usr/include/c++/12/bits/locale_facets_nonio.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/time_members.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/12/bits/codecvt.h \
- /usr/include/c++/12/bits/locale_facets_nonio.tcc \
- /usr/include/c++/12/bits/locale_conv.h /usr/include/c++/12/iomanip \
- /usr/include/c++/12/bits/quoted_string.h /usr/include/c++/12/sstream \
- /usr/include/c++/12/istream /usr/include/c++/12/bits/istream.tcc \
- /usr/include/c++/12/bits/sstream.tcc /usr/include/c++/12/codecvt \
- /usr/include/c++/12/bits/fs_dir.h /usr/include/c++/12/bits/fs_ops.h \
- /usr/include/c++/12/fstream \
- /usr/include/c++/12/x86_64-suse-linux/bits/basic_file.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/c++io.h \
- /usr/include/c++/12/bits/fstream.tcc \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgException.hpp
+  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.cpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLExternal.hpp \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/GLES3/gl3.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/GLES3/gl3platform.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/KHR/khrplatform.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdint.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config_site \
+  /home/maracaja/bin/emsdk/upstream/lib/clang/16.0.0/include/stdint.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_opengles2.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_config.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_platform.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/SDL2/begin_code.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/SDL2/close_code.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_config_emscripten.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2platform.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2ext.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/emscripten.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_asm.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_macros.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_types.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_js.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/wget.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/version.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/pthread.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/sched.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/compat/time.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/time.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/eventloop.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/console.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5_webgl.h \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgShader.hpp \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/optional \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__availability \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/invocable.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/invoke.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/weak_result_type.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/binary_function.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/unary_function.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/type_traits \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstddef \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/version \
+  /home/maracaja/bin/emsdk/upstream/lib/clang/16.0.0/include/stddef.h \
+  /home/maracaja/bin/emsdk/upstream/lib/clang/16.0.0/include/__stddef_max_align_t.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__nullptr \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/forward.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__debug \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/iosfwd \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__mbstate_t.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/compat/wchar.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/wchar.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stddef.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/wchar.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional_base \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/operations.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/reference_wrapper.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/addressof.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/allocator_arg_t.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/uses_allocator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/exception \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstdlib \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdlib.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/new \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/typeinfo \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstdint \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/utility \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__tuple \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/as_const.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/move.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/auto_cast.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/cmp.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/limits \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__undef_macros \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/declval.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/exchange.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/in_place.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/integer_sequence.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/pair.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/common_comparison_category.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/ordering.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/synth_three_way.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/three_way_comparable.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/common_reference_with.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/convertible_to.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/same_as.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/equality_comparable.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/boolean_testable.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/totally_ordered.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/unwrap_ref.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/piecewise_construct.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/priority_tag.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/rel_ops.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/swap.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/to_underlying.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__utility/transaction.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/compare \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/compare_partial_order_fallback.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/partial_order.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/compare_three_way.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/weak_order.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/strong_order.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__bit/bit_cast.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cmath \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/compat/math.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/math.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/math.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/compare_strong_order_fallback.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/compare_three_way_result.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/compare_weak_order_fallback.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__compare/is_eq.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/initializer_list \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/functional \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/search.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/comp.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/iterator_traits.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/incrementable_traits.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/concepts \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/arithmetic.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/assignable.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/class_or_enum.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/common_with.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/constructible.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/destructible.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/copyable.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/movable.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/swappable.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/derived_from.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/different_from.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/predicate.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/regular.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/semiregular.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__concepts/relation.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/readable_traits.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/binary_negate.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/bind.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/tuple \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/bind_back.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/perfect_forward.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/bind_front.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/binder1st.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/binder2nd.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/compose.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/default_searcher.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/function.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/allocator_traits.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/construct_at.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/access.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/voidify.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/pointer_traits.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/compressed_pair.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/shared_ptr.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/allocation_guard.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/allocator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdexcept \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/unique_ptr.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/hash.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstring \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/string.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/string.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/strings.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/atomic \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__thread/poll_with_backoff.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/chrono \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/calendar.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/duration.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/ratio \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/climits \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/limits.h \
+  /home/maracaja/bin/emsdk/upstream/lib/clang/16.0.0/include/limits.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/limits.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/bits/limits.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/system_clock.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/time_point.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/ctime \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/convert_to_timespec.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/file_clock.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/high_resolution_clock.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/steady_clock.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__thread/timed_backoff_policy.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__threading_support \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/errno.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/errno.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/bits/errno.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/memory \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/concepts.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/concepts.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/iter_move.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__ranges/access.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__ranges/enable_borrowed_range.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__ranges/concepts.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__ranges/data.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__ranges/enable_view.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__ranges/size.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/ranges_construct_at.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__ranges/dangling.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/ranges_uninitialized_algorithms.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/in_out_result.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/uninitialized_algorithms.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/iterator \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/advance.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/back_insert_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/common_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/iter_swap.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/variant \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__variant/monostate.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/counted_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/default_sentinel.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/data.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/distance.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/empty.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/erase_if_container.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/front_insert_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/indirectly_comparable.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/identity.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/projected.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/insert_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/istream_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/istreambuf_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/move_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/next.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/ostream_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/ostreambuf_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/prev.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/reverse_access.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/reverse_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/size.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/unreachable_sentinel.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/wrap_iter.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/raw_storage_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/temporary_buffer.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/mem_fn.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/mem_fun_ref.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/not_fn.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/pointer_to_binary_function.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/pointer_to_unary_function.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/ranges_operations.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/unary_negate.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/string \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/algorithm \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__bits \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/adjacent_find.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/all_of.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/any_of.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/binary_search.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/comp_ref_type.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/lower_bound.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/half_positive.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/clamp.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/copy.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/unwrap_iter.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/copy_backward.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/copy_if.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/copy_n.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/count.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/count_if.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/equal.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/equal_range.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/upper_bound.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/fill.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/fill_n.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/find.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/find_end.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/find_first_of.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/find_if.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/find_if_not.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/for_each.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/for_each_n.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/generate.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/generate_n.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/in_in_out_result.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/in_in_result.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/includes.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/inplace_merge.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/min.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/min_element.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/move.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/rotate.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/move_backward.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/swap_ranges.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/is_heap.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/is_heap_until.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/is_partitioned.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/is_permutation.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/is_sorted.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/is_sorted_until.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/iter_swap.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/lexicographical_compare.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/make_heap.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/sift_down.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/max.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/max_element.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/merge.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/minmax.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/minmax_element.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/mismatch.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/next_permutation.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/reverse.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/none_of.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/nth_element.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/sort.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/partial_sort.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/sort_heap.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/pop_heap.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/partial_sort_copy.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/partition.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/partition_copy.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/partition_point.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/prev_permutation.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/push_heap.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/remove.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/remove_copy.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/remove_copy_if.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/remove_if.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/replace.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/replace_copy.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/replace_copy_if.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/replace_if.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/reverse_copy.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/rotate_copy.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/sample.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__random/uniform_int_distribution.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__random/log2.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/bit \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__bit/byteswap.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/search_n.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/set_difference.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/set_intersection.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/set_symmetric_difference.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/set_union.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/shift_left.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/shift_right.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/shuffle.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/stable_partition.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/stable_sort.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/transform.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/unique.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/unique_copy.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstdio \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdio.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/stdio.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/string_view \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__string \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cwchar \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cwctype \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cctype \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/compat/ctype.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/ctype.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/ctype.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/compat/wctype.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/wctype.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/wctype.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/vector \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__bit_reference \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__split_buffer \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgApplication.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/itertools.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/accumulate.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cassert \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iterbase.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/batched.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iteratoriterator.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/chain.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iter_tuples.hpp \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/array \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/chunked.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/combinations.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/combinations_with_replacement.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/compress.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/count.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/range.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/cycle.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/dropwhile.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/filter.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/enumerate.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/filterfalse.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/groupby.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/imap.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/starmap.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/zip.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/permutations.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/powerset.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/product.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/repeat.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/reversed.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/slice.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/sliding_window.hpp \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/deque \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/sorted.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/takewhile.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/unique_everseen.hpp \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/unordered_set \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/is_transparent.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__hash_table \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__node_handle \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/unique_justseen.hpp \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/fmt/core.h \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_algorithm \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_assert \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/span \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_byte \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_util \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/multi_span \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/numeric \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/accumulate.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/adjacent_difference.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/exclusive_scan.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/gcd_lcm.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/inclusive_scan.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/inner_product.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/iota.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/midpoint.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/partial_sum.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/reduce.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/transform_exclusive_scan.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/transform_inclusive_scan.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/transform_reduce.h \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/pointers \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/system_error \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__errc \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cerrno \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/string_span \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/span_ext \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/filesystem \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/copy_options.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/directory_entry.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/file_status.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/file_type.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/perms.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/file_time_type.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/filesystem_error.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/path.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/iomanip \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/istream \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/ostream \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/bitset \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/ios \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__locale \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/locale.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/locale.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/mutex \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__mutex_base \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__support/musl/xlocale.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/locale \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstdarg \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdarg.h \
+  /home/maracaja/bin/emsdk/upstream/lib/clang/16.0.0/include/stdarg.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/streambuf \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__bsd_locale_fallbacks.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/operations.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/perm_options.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/space_info.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/directory_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/directory_options.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/path_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/u8path.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/fstream \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/sstream \
+  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgException.hpp

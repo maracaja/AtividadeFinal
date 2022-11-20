@@ -156,19 +156,6 @@ fmt/fast:
 .PHONY : fmt/fast
 
 #=============================================================================
-# Target rules for targets named city
-
-# Build rule for target.
-city: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 city
-.PHONY : city
-
-# fast build rule for target.
-city/fast:
-	$(MAKE) $(MAKESILENT) -f examples/city/CMakeFiles/city.dir/build.make examples/city/CMakeFiles/city.dir/build
-.PHONY : city/fast
-
-#=============================================================================
 # Target rules for targets named atividade3
 
 # Build rule for target.
@@ -191,7 +178,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... abcg"
 	@echo "... atividade3"
-	@echo "... city"
 	@echo "... fmt"
 	@echo "... imgui"
 .PHONY : help

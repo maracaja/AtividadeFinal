@@ -1,117 +1,75 @@
-# ABCg
-
-![linux workflow](https://github.com/hbatagelo/abcg/actions/workflows/linux.yml/badge.svg)
-![macOS workflow](https://github.com/hbatagelo/abcg/actions/workflows/macos.yml/badge.svg)
-![Windows workflow](https://github.com/hbatagelo/abcg/actions/workflows/windows.yml/badge.svg)
-![WASM workflow](https://github.com/hbatagelo/abcg/actions/workflows/wasm.yml/badge.svg)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/hbatagelo/abcg)](https://github.com/hbatagelo/abcg/releases/latest)
-
-Development framework accompanying the course [MCTA008-17 Computer Graphics](http://professor.ufabc.edu.br/~harlen.batagelo/cg/) at [UFABC](https://www.ufabc.edu.br/).
-
-[Documentation](https://hbatagelo.github.io/abcg/abcg/doc/html/) \| [Release notes](CHANGELOG.md) 
-
-ABCg is a lightweight C++ framework that simplifies the development of 3D graphics applications based on [OpenGL](https://www.opengl.org), [OpenGL ES](https://www.khronos.org), [WebGL](https://www.khronos.org/webgl/), and [Vulkan](https://www.vulkan.org). It is designed for the tutorials and assignments of the course "MCTA008-17 Computer Graphics" taught at Federal University of ABC (UFABC).
+# Atividade 3
+#### Sérgio Maracajá Junior - RA 11000315
+#### Vinícius Lacerda Gonsalez - RA 11____15
 
 * * *
 
-## Main features
+## Sobre a aplicação
 
--   Supported platforms: Linux, mac OS, Windows, WebAssembly.
--   Supported backends: OpenGL 3.3+, OpenGL ES 3.0+, WebGL 2.0 (via Emscripten), Vulkan 1.3.
--   Applications that use the common subset of functions between OpenGL 3.3 and OpenGL ES 3.0 can be built for WebGL 2.0 using the same source code. 
--   OpenGL functions can be qualified with the `abcg::` namespace to enable throwing exceptions with descriptive GL error messages that include the source code location.
--   Includes helper classes and functions for loading textures (using [SDL_image](https://www.libsdl.org/projects/SDL_image/)), loading OBJ 3D models (using [tinyobjloader](https://github.com/tinyobjloader/tinyobjloader)), and compiling GLSL shaders to SPIR-V with [glslang](https://github.com/KhronosGroup/glslang).
+A presente aplicação apresenta um modelo simplificado de uma vista aérea de uma cidade, usando transformações de câmera para navegar na visualização e paralelepípedos de diferentes dimensões baseados em um mesmo modelo simulando prédios.
 
 * * *
 
-## Requirements
+## Shaders
 
-The following minimum requirements are shared among all platforms:
+### lookat.frag
 
--   [CMake](https://cmake.org/) 3.21.
--   A C++ compiler with at least partial support for C++20 (tested with GCC 11, Clang 13, MSVC 17, and emcc 3.1).
--   A system with support for OpenGL 3.3 (OpenGL backend) or Vulkan 1.3 (Vulkan backend). Conformant software rasterizers such as Mesa's [Gallium llvmpipe](https://docs.mesa3d.org/drivers/llvmpipe.html) and lavapipe (post Jun 2022) are supported. Mesa's [D3D12](https://devblogs.microsoft.com/directx/directx-heart-linux/) backend on [WSL 2.0](https://docs.microsoft.com/en-us/windows/wsl/install) is supported as well.
+Este shader realiza apenas uma operação importante: se a câmera em algum momento atravessar algumas estrutura, esta aparecerá mais escura, com metade da intensidade, permanecendo com a cor normal em qualquer outro caso (linhas 11 e 12).
 
-For WebAssembly:
 
--   [Emscripten](https://emscripten.org/).
--   A browser with support for WebGL 2.0.
+### lookat.vert
 
-For building desktop applications:
+Aqui, no `main` (linhas 12-18), a posição da câmera no cenário é refeita após a atualização dos valores de `model`, `view` e `posicao`, bem como esta posição calculada influencia na perda de intensidade (calculada se essa diferença vai até 10 unidades de distância), gerando um efeito de escurecimento gradual até uma perspectiva similar a uma sombra no horizonte, antes do desaparecimento.
 
--   [SDL](https://www.libsdl.org/) 2.0.
--   [SDL_image](https://www.libsdl.org/projects/SDL_image/) 2.0.
--   [GLEW](http://glew.sourceforge.net/) 2.2.0 (required for OpenGL-based applications).
--   [Vulkan](https://www.lunarg.com/vulkan-sdk/) 1.3 (required for Vulkan-based applications).
-
-Desktop dependencies can be resolved automatically with [Conan](https://conan.io/). It is disabled by default. To use it, install Conan 1.47 or later and then configure CMake with `-DENABLE_CONAN=ON`.
-
-The default renderer backend is OpenGL (CMake option `GRAPHICS_API=OpenGL`). To use the Vulkan backend, configure CMake with `-DGRAPHICS_API=Vulkan`.
 
 * * *
 
-## Installation and usage
+## Implementação
 
-Start by cloning the repository:
+Segue abaixo a descrição do código-fonte, contido na pasta do projeto como mais um exemplo na pasta `examples`, sob o título `atividade1`. Além dos arquivos C++ que serão descritos mais adiante, foram realizadas as seguintes adições ao projeto:
 
-    # Get abcg repo
-    git clone https://github.com/hbatagelo/abcg.git
+-   Em `examples/CMakeLists.txt`, há apenas a linha de código `add_subdirectory(atividade3)`;
+-   Em `public`, além dos arquivos gerados pela compilação do WASM, a página `helloworld.html` foi modificada a linha 258 para que a página execute o arquivo `atividade3.js`;
+-   A pasta `docs` foi criada com os arquivos compilados pelo `build-wasm` e o `helloworld.html`, visando a criação do site no GitHub Pages;
+-   Na pasta `atividade3`:
+    -   Em `CMakeLists.txt`, foi definido o nome do projeto na linha 1. Na linha seguinte estão listados os arquivos `.cpp` utilizados;
+    -   Em `assets`, além dos shaders, é incluído o arquivo `box.obj` das notas de aula, modificado de forma a deixar suas coordenadas de origem sob sua face inferior.
 
-    # Enter the directory
-    cd abcg
 
-Follow the instructions below to build the "Hello, World!" sample located in `abcg/examples/helloworld`.
+### main.cpp
 
-### Windows
+Este arquivo acabou por ser, na prática, uma repetição do código apresentado no LookAt, com o método `main` instanciando a aplicação (linha 7), gerando e configurando a janela onde a aplicação reside (linhas 8-15), e chamando seu método `run` (linha 16), tudo isso dentro de uma estrutura `try-catch`.
 
--   Run `build-vs.bat` for building with the Visual Studio 2022 toolchain.
--   Run `build.bat` for building with GCC (MinGW-w64).
 
-`build-vs.bat` and `build.bat` accept two optional arguments: (1) the build type, which is `Release` by default, and (2) an extra CMake option. For example, for a `Debug` build with `-DENABLE_CONAN=ON` using VS 2022, run 
+### chao.hpp
 
-    build-vs.bat Debug -DENABLE_CONAN=ON
+Este arquivo de cabeçalho define a classe `Chao`, com seus métodos públicos `create`, `paint` e `destroy` (linhas 9 a 11), e as variáveis privadas que intermediam sua renderização (linhas 14-17).
+O chão do cenário é cinza-escuro (aparentando mais um preto, visando lembrar asfalto) e contrasta um pouco com a cor de fundo da aplicação.
 
-### Linux and macOS
 
-Run `./build.sh`.
+### chao.cpp
 
-The script accepts two optional arguments: (1) the build type, which is `Release` by default, and (2) an extra CMake option. For example, for a `Debug` build with `-DENABLE_CONAN=ON`, run 
+Neste arquivo-fonte, são implementados os métodos públicos declarados em `chao.hpp`, baseados em outros códigos vistos nas notas de aula.
 
-    ./build.sh Debug -DENABLE_CONAN=ON
+#### create – linhas 6 a 36
 
-### WebAssembly
+Inicia-se o código com a declaração dos quatro vértices da superfície do cenário (linhas 8-14). Como se trata de uma única cor, não é necessária outra estrutura adicional.
+Na sequência, as estruturas que geram o VBO e VAO são geradas e, em seguida, utilizadas. Por fim, as referências `model` e `cor`, que endereçam variáveis do shader.
 
-1.  Run `build-wasm.bat` (Windows) or `./build-wasm.sh` (Linux/macOS).
-2.  Run `runweb.bat` (Windows) or `./runweb.sh` (Linux/macOS) for setting up a local web server.
-3.  Open <http://localhost:8080/helloworld.html>.
+#### paint – linhas 38 a 46
 
-* * *
+Com uma cor de fundo em cinza 30%, os triângulos que formam o quadrado são desenhados.
 
-## Docker setup
+#### destroy – linhas 48 a 52
 
-ABCg can be built in a [Docker](https://www.docker.com/) container. The Dockerfile provided is based on Ubuntu 22.04 and includes Emscripten.
+Neste método, são eliminadas as estruturas VAO e VBO, com uso dos métodos dedicados da biblioteca `abcg`.
 
-1.  Create the Docker image (`abcg`):
 
-        sudo docker build -t abcg .
+### camera.hpp
 
-2.  Create the container (`abcg_container`):
+### camera.cpp
 
-        sudo docker create -it \
-          -p 8080:8080 \
-          -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-          -e DISPLAY \
-          --name abcg_container abcg
 
-3.  Start the container:
+### window.hpp
 
-        sudo docker start -ai abcg_container
-
-    On NVIDIA GPUs, install the [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-docker) to allow the container to use the host's NVIDIA driver and X server. Expose the X server with `sudo xhost +local:root` before starting the container.
-
-* * *
-
-## License
-
-ABCg is licensed under the MIT License. See [LICENSE](https://github.com/hbatagelo/abcg/blob/main/LICENSE) for more information.
-# Atividade3
+### window.cpp

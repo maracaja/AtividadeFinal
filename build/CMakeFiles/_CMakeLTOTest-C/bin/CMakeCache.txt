@@ -14,12 +14,36 @@
 # EXTERNAL cache entries
 ########################
 
+//Emscripten ar
+CMAKE_AR:FILEPATH=/home/maracaja/bin/emsdk/upstream/emscripten/emar
+
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
+
+//Path to the emulator for the target system.
+CMAKE_CROSSCOMPILING_EMULATOR:FILEPATH=/home/maracaja/bin/emsdk/node/14.18.2_64bit/bin/node
+
+//Emscripten em++
+CMAKE_CXX_COMPILER:FILEPATH=/home/maracaja/bin/emsdk/upstream/emscripten/em++
+
+//Emscripten ar
+CMAKE_CXX_COMPILER_AR:FILEPATH=/home/maracaja/bin/emsdk/upstream/emscripten/emar
+
+//Emscripten ranlib
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/home/maracaja/bin/emsdk/upstream/emscripten/emranlib
+
+//Emscripten emcc
+CMAKE_C_COMPILER:FILEPATH=/home/maracaja/bin/emsdk/upstream/emscripten/emcc
+
+//Emscripten ar
+CMAKE_C_COMPILER_AR:FILEPATH=/home/maracaja/bin/emsdk/upstream/emscripten/emar
+
+//Emscripten ranlib
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/home/maracaja/bin/emsdk/upstream/emscripten/emranlib
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -58,7 +82,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/pkgRedirects
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/usr/local
+CMAKE_INSTALL_PREFIX:PATH=/home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot
 
 //No help, variable specified on the command line.
 CMAKE_INTERPROCEDURAL_OPTIMIZATION:UNINITIALIZED=ON
@@ -94,6 +118,9 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=lto-test
+
+//Emscripten ranlib
+CMAKE_RANLIB:FILEPATH=/home/maracaja/bin/emsdk/upstream/emscripten/emranlib
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -147,6 +174,19 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=ON
+
+//If true, we are targeting Emscripten output.
+EMSCRIPTEN:BOOL=1
+
+//Force C/C++ compiler
+EMSCRIPTEN_FORCE_COMPILERS:BOOL=ON
+
+//If set, static library targets generate LLVM bitcode files (.bc).
+// If disabled (default), UNIX ar archives (.a) are generated.
+EMSCRIPTEN_GENERATE_BITCODE_STATIC_LIBRARIES:BOOL=OFF
+
+//Path to a program.
+NODE_JS_EXECUTABLE:FILEPATH=/home/maracaja/bin/emsdk/node/14.18.2_64bit/bin/node
 
 //Value Computed by CMake
 lto-test_BINARY_DIR:STATIC=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/bin
@@ -215,8 +255,6 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/src
-//Install .so files without execute permission.
-CMAKE_INSTALL_SO_NO_EXE:INTERNAL=0
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
 CMAKE_MODULE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_DEBUG
@@ -258,6 +296,4 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_SUPPRESS_DEVELOPER_WARNINGS:INTERNAL=FALSE
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//linker supports push/pop state
-_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 

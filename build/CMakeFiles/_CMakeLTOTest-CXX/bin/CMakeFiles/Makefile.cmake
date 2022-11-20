@@ -10,6 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/3.24.3/CMakeCXXCompiler.cmake"
   "/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/3.24.3/CMakeSystem.cmake"
   "/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-CXX/src/CMakeLists.txt"
+  "/home/maracaja/bin/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake/Modules/CMakeGenericSystem.cmake"
@@ -18,12 +19,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
-  "/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake"
+  "/usr/share/cmake/Modules/Compiler/Clang-CXX.cmake"
+  "/usr/share/cmake/Modules/Compiler/Clang.cmake"
   "/usr/share/cmake/Modules/Compiler/GNU.cmake"
-  "/usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake"
-  "/usr/share/cmake/Modules/Platform/Linux-GNU.cmake"
-  "/usr/share/cmake/Modules/Platform/Linux.cmake"
-  "/usr/share/cmake/Modules/Platform/UnixPaths.cmake"
   )
 
 # The corresponding makefile is:

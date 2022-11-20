@@ -218,17 +218,14 @@ abcg/external/tiny_obj_loader/clean:
 # Directory level rules for directory examples
 
 # Recursive "all" directory target.
-examples/all: examples/city/all
 examples/all: examples/atividade3/all
 .PHONY : examples/all
 
 # Recursive "preinstall" directory target.
-examples/preinstall: examples/city/preinstall
 examples/preinstall: examples/atividade3/preinstall
 .PHONY : examples/preinstall
 
 # Recursive "clean" directory target.
-examples/clean: examples/city/clean
 examples/clean: examples/atividade3/clean
 .PHONY : examples/clean
 
@@ -246,21 +243,6 @@ examples/atividade3/preinstall:
 # Recursive "clean" directory target.
 examples/atividade3/clean: examples/atividade3/CMakeFiles/atividade3.dir/clean
 .PHONY : examples/atividade3/clean
-
-#=============================================================================
-# Directory level rules for directory examples/city
-
-# Recursive "all" directory target.
-examples/city/all: examples/city/CMakeFiles/city.dir/all
-.PHONY : examples/city/all
-
-# Recursive "preinstall" directory target.
-examples/city/preinstall:
-.PHONY : examples/city/preinstall
-
-# Recursive "clean" directory target.
-examples/city/clean: examples/city/CMakeFiles/city.dir/clean
-.PHONY : examples/city/clean
 
 #=============================================================================
 # Target rules for target abcg/CMakeFiles/abcg.dir
@@ -296,7 +278,7 @@ abcg/CMakeFiles/abcg.dir/clean:
 abcg/external/imgui/CMakeFiles/imgui.dir/all:
 	$(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=20,21,22,23,24,25,26,27 "Built target imgui"
 .PHONY : abcg/external/imgui/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -322,7 +304,7 @@ abcg/external/imgui/CMakeFiles/imgui.dir/clean:
 abcg/external/fmt/CMakeFiles/fmt.dir/all:
 	$(MAKE) $(MAKESILENT) -f abcg/external/fmt/CMakeFiles/fmt.dir/build.make abcg/external/fmt/CMakeFiles/fmt.dir/depend
 	$(MAKE) $(MAKESILENT) -f abcg/external/fmt/CMakeFiles/fmt.dir/build.make abcg/external/fmt/CMakeFiles/fmt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=23,24 "Built target fmt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=18,19 "Built target fmt"
 .PHONY : abcg/external/fmt/CMakeFiles/fmt.dir/all
 
 # Build rule for subdir invocation for target.
@@ -340,34 +322,6 @@ fmt: abcg/external/fmt/CMakeFiles/fmt.dir/rule
 abcg/external/fmt/CMakeFiles/fmt.dir/clean:
 	$(MAKE) $(MAKESILENT) -f abcg/external/fmt/CMakeFiles/fmt.dir/build.make abcg/external/fmt/CMakeFiles/fmt.dir/clean
 .PHONY : abcg/external/fmt/CMakeFiles/fmt.dir/clean
-
-#=============================================================================
-# Target rules for target examples/city/CMakeFiles/city.dir
-
-# All Build rule for target.
-examples/city/CMakeFiles/city.dir/all: abcg/CMakeFiles/abcg.dir/all
-examples/city/CMakeFiles/city.dir/all: abcg/external/imgui/CMakeFiles/imgui.dir/all
-examples/city/CMakeFiles/city.dir/all: abcg/external/fmt/CMakeFiles/fmt.dir/all
-	$(MAKE) $(MAKESILENT) -f examples/city/CMakeFiles/city.dir/build.make examples/city/CMakeFiles/city.dir/depend
-	$(MAKE) $(MAKESILENT) -f examples/city/CMakeFiles/city.dir/build.make examples/city/CMakeFiles/city.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=18,19,20,21,22 "Built target city"
-.PHONY : examples/city/CMakeFiles/city.dir/all
-
-# Build rule for subdir invocation for target.
-examples/city/CMakeFiles/city.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles 27
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/city/CMakeFiles/city.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles 0
-.PHONY : examples/city/CMakeFiles/city.dir/rule
-
-# Convenience name for target.
-city: examples/city/CMakeFiles/city.dir/rule
-.PHONY : city
-
-# clean rule for target.
-examples/city/CMakeFiles/city.dir/clean:
-	$(MAKE) $(MAKESILENT) -f examples/city/CMakeFiles/city.dir/build.make examples/city/CMakeFiles/city.dir/clean
-.PHONY : examples/city/CMakeFiles/city.dir/clean
 
 #=============================================================================
 # Target rules for target examples/atividade3/CMakeFiles/atividade3.dir

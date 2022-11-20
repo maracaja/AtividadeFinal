@@ -70,158 +70,169 @@ include abcg/CMakeFiles/abcg.dir/progress.make
 include abcg/CMakeFiles/abcg.dir/flags.make
 
 abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
+abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: abcg/CMakeFiles/abcg.dir/includes_CXX.rsp
 abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: /home/maracaja/Programacao/CG/Atividade3/abcg/abcgApplication.cpp
 abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o -MF CMakeFiles/abcg.dir/abcgApplication.cpp.o.d -o CMakeFiles/abcg.dir/abcgApplication.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgApplication.cpp
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o -MF CMakeFiles/abcg.dir/abcgApplication.cpp.o.d -o CMakeFiles/abcg.dir/abcgApplication.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgApplication.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgApplication.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgApplication.cpp > CMakeFiles/abcg.dir/abcgApplication.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgApplication.cpp > CMakeFiles/abcg.dir/abcgApplication.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgApplication.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgApplication.cpp -o CMakeFiles/abcg.dir/abcgApplication.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgApplication.cpp -o CMakeFiles/abcg.dir/abcgApplication.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
+abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o: abcg/CMakeFiles/abcg.dir/includes_CXX.rsp
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o: /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTimer.cpp
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o -MF CMakeFiles/abcg.dir/abcgTimer.cpp.o.d -o CMakeFiles/abcg.dir/abcgTimer.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTimer.cpp
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o -MF CMakeFiles/abcg.dir/abcgTimer.cpp.o.d -o CMakeFiles/abcg.dir/abcgTimer.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTimer.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgTimer.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTimer.cpp > CMakeFiles/abcg.dir/abcgTimer.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTimer.cpp > CMakeFiles/abcg.dir/abcgTimer.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgTimer.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTimer.cpp -o CMakeFiles/abcg.dir/abcgTimer.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTimer.cpp -o CMakeFiles/abcg.dir/abcgTimer.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgException.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
+abcg/CMakeFiles/abcg.dir/abcgException.cpp.o: abcg/CMakeFiles/abcg.dir/includes_CXX.rsp
 abcg/CMakeFiles/abcg.dir/abcgException.cpp.o: /home/maracaja/Programacao/CG/Atividade3/abcg/abcgException.cpp
 abcg/CMakeFiles/abcg.dir/abcgException.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgException.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgException.cpp.o -MF CMakeFiles/abcg.dir/abcgException.cpp.o.d -o CMakeFiles/abcg.dir/abcgException.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgException.cpp
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgException.cpp.o -MF CMakeFiles/abcg.dir/abcgException.cpp.o.d -o CMakeFiles/abcg.dir/abcgException.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgException.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgException.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgException.cpp > CMakeFiles/abcg.dir/abcgException.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgException.cpp > CMakeFiles/abcg.dir/abcgException.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgException.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgException.cpp -o CMakeFiles/abcg.dir/abcgException.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgException.cpp -o CMakeFiles/abcg.dir/abcgException.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
+abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: abcg/CMakeFiles/abcg.dir/includes_CXX.rsp
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: /home/maracaja/Programacao/CG/Atividade3/abcg/abcgImage.cpp
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o -MF CMakeFiles/abcg.dir/abcgImage.cpp.o.d -o CMakeFiles/abcg.dir/abcgImage.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgImage.cpp
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o -MF CMakeFiles/abcg.dir/abcgImage.cpp.o.d -o CMakeFiles/abcg.dir/abcgImage.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgImage.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgImage.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgImage.cpp > CMakeFiles/abcg.dir/abcgImage.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgImage.cpp > CMakeFiles/abcg.dir/abcgImage.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgImage.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgImage.cpp -o CMakeFiles/abcg.dir/abcgImage.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgImage.cpp -o CMakeFiles/abcg.dir/abcgImage.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
+abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o: abcg/CMakeFiles/abcg.dir/includes_CXX.rsp
 abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o: /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTrackball.cpp
 abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o -MF CMakeFiles/abcg.dir/abcgTrackball.cpp.o.d -o CMakeFiles/abcg.dir/abcgTrackball.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTrackball.cpp
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o -MF CMakeFiles/abcg.dir/abcgTrackball.cpp.o.d -o CMakeFiles/abcg.dir/abcgTrackball.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTrackball.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgTrackball.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTrackball.cpp > CMakeFiles/abcg.dir/abcgTrackball.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTrackball.cpp > CMakeFiles/abcg.dir/abcgTrackball.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgTrackball.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTrackball.cpp -o CMakeFiles/abcg.dir/abcgTrackball.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTrackball.cpp -o CMakeFiles/abcg.dir/abcgTrackball.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
+abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o: abcg/CMakeFiles/abcg.dir/includes_CXX.rsp
 abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o: /home/maracaja/Programacao/CG/Atividade3/abcg/abcgWindow.cpp
 abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o -MF CMakeFiles/abcg.dir/abcgWindow.cpp.o.d -o CMakeFiles/abcg.dir/abcgWindow.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgWindow.cpp
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o -MF CMakeFiles/abcg.dir/abcgWindow.cpp.o.d -o CMakeFiles/abcg.dir/abcgWindow.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgWindow.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgWindow.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgWindow.cpp > CMakeFiles/abcg.dir/abcgWindow.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgWindow.cpp > CMakeFiles/abcg.dir/abcgWindow.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgWindow.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgWindow.cpp -o CMakeFiles/abcg.dir/abcgWindow.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgWindow.cpp -o CMakeFiles/abcg.dir/abcgWindow.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
+abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o: abcg/CMakeFiles/abcg.dir/includes_CXX.rsp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o: /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLError.cpp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLError.cpp
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLError.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgOpenGLError.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLError.cpp > CMakeFiles/abcg.dir/abcgOpenGLError.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLError.cpp > CMakeFiles/abcg.dir/abcgOpenGLError.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgOpenGLError.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLError.cpp -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLError.cpp -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
+abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: abcg/CMakeFiles/abcg.dir/includes_CXX.rsp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.cpp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.cpp
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.cpp > CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.cpp > CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.cpp -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.cpp -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
+abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: abcg/CMakeFiles/abcg.dir/includes_CXX.rsp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLImage.cpp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLImage.cpp
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLImage.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLImage.cpp > CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLImage.cpp > CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLImage.cpp -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLImage.cpp -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
+abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: abcg/CMakeFiles/abcg.dir/includes_CXX.rsp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.cpp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.cpp
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.cpp > CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.cpp > CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.cpp -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.cpp -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
+abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o: abcg/CMakeFiles/abcg.dir/includes_CXX.rsp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o: /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLWindow.cpp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLWindow.cpp
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLWindow.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLWindow.cpp > CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLWindow.cpp > CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLWindow.cpp -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade3/build/abcg && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLWindow.cpp -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.s
 
 # Object files for target abcg
 abcg_OBJECTS = \
