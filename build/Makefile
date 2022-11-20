@@ -168,6 +168,19 @@ city/fast:
 	$(MAKE) $(MAKESILENT) -f examples/city/CMakeFiles/city.dir/build.make examples/city/CMakeFiles/city.dir/build
 .PHONY : city/fast
 
+#=============================================================================
+# Target rules for targets named atividade3
+
+# Build rule for target.
+atividade3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 atividade3
+.PHONY : atividade3
+
+# fast build rule for target.
+atividade3/fast:
+	$(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/build
+.PHONY : atividade3/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -177,6 +190,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... abcg"
+	@echo "... atividade3"
 	@echo "... city"
 	@echo "... fmt"
 	@echo "... imgui"

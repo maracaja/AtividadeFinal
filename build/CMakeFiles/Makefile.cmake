@@ -26,6 +26,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/maracaja/Programacao/CG/Atividade3/cmake/Sanitizers.cmake"
   "/home/maracaja/Programacao/CG/Atividade3/cmake/Warnings.cmake"
   "/home/maracaja/Programacao/CG/Atividade3/examples/CMakeLists.txt"
+  "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/CMakeLists.txt"
   "/home/maracaja/Programacao/CG/Atividade3/examples/city/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake/Modules/CMakeCCompilerABI.c"
@@ -167,6 +168,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "abcg/external/gsl/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/city/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/atividade3/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -175,4 +177,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "abcg/external/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   "abcg/external/fmt/CMakeFiles/fmt.dir/DependInfo.cmake"
   "examples/city/CMakeFiles/city.dir/DependInfo.cmake"
+  "examples/atividade3/CMakeFiles/atividade3.dir/DependInfo.cmake"
   )

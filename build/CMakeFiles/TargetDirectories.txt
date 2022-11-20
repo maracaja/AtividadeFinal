@@ -24,3 +24,6 @@
 /home/maracaja/Programacao/CG/Atividade3/build/examples/city/CMakeFiles/city.dir
 /home/maracaja/Programacao/CG/Atividade3/build/examples/city/CMakeFiles/edit_cache.dir
 /home/maracaja/Programacao/CG/Atividade3/build/examples/city/CMakeFiles/rebuild_cache.dir
+/home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3/CMakeFiles/atividade3.dir
+/home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3/CMakeFiles/edit_cache.dir
+/home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3/CMakeFiles/rebuild_cache.dir
