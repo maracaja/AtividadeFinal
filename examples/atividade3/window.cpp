@@ -3,7 +3,7 @@
 #include <unordered_map>
 
 // Explicit specialization of std::hash for Vertex
-template <> struct hash<Vertex> 
+template <> struct std::hash<Vertex> 
 {
     size_t operator()(Vertex const &vertex) const noexcept 
     {
@@ -58,6 +58,7 @@ void Window::onCreate()
     uniform_real_distribution distPos(-4.0f, 4.0f); // Valores de posicionamento dos prédios
     uniform_real_distribution distCor(0.7f, 1.0f); // Valores dos canais RGB das cores dos prédios
 
+    // Criação dos dados dos prédios
     for ([[maybe_unused]] auto _ : iter::range(0, N_PREDIOS))
     {
         cores.emplace_back(vec3(distCor(r), distCor(r), distCor(r)));
@@ -75,10 +76,10 @@ void Window::onCreate()
     });
   
     // Localização das variáveis uniformes
-    viewLoc = abcg::glGetUniformLocation(m_program, "view");
-    projLoc = abcg::glGetUniformLocation(m_program, "proj");
-    modelLoc = abcg::glGetUniformLocation(m_program, "model");
-    colorLoc = abcg::glGetUniformLocation(m_program, "cor");
+    viewLoc = abcg::glGetUniformLocation(prog, "view");
+    projLoc = abcg::glGetUniformLocation(prog, "proj");
+    modelLoc = abcg::glGetUniformLocation(prog, "model");
+    colorLoc = abcg::glGetUniformLocation(prog, "cor");
 
     chao.create(prog); // Cria o chão do cenário
     loadModelFromFile(assetsPath + "box.obj"); // Carrega modelo box.obj
@@ -100,7 +101,7 @@ void Window::onCreate()
     abcg::glBindVertexArray(VAO);
 
     abcg::glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    auto const posicao{abcg::glGetAttribLocation(m_program, "posicao")};
+    auto const posicao{abcg::glGetAttribLocation(prog, "posicao")};
     abcg::glEnableVertexAttribArray(posicao);
     abcg::glVertexAttribPointer(posicao, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), nullptr);
     abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -109,95 +110,32 @@ void Window::onCreate()
     abcg::glBindVertexArray(0);
 }
 
-void Window::loadModelFromFile(std::string_view path) {
-  tinyobj::ObjReader reader;
+void Window::onPaint() 
+{
+    abcg::glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    abcg::glViewport(0, 0, tamanhoTela.x, tamanhoTela.y);
+    abcg::glUseProgram(prog);
 
-  if (!reader.ParseFromFile(path.data())) {
-    if (!reader.Error().empty()) {
-      throw abcg::RuntimeError(
-          fmt::format("Failed to load model {} ({})", path, reader.Error()));
+    abcg::glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &camera.getViewMatrix()[0][0]);
+    abcg::glUniformMatrix4fv(projLoc, 1, GL_FALSE, &camera.getProjMatrix()[0][0]);
+    abcg::glBindVertexArray(VAO);
+
+    // Desenha os prédios
+    mat4 model;
+    for (auto i : iter::range(0, N_PREDIOS))
+    {
+        model = mat4(1.0f);
+        model = translate(model, centros.at(i));
+        model = scale(model, escalas.at(i));
+
+        abcg::glUniformMatrix4fv(modelLoc, 1, GL_FALSE, &model[0][0]);
+        abcg::glUniform4f(colorLoc, cores.at(i).x, cores.at(i).y, cores.at(i).z, 1.0f);
+        abcg::glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, nullptr);
     }
-    throw abcg::RuntimeError(fmt::format("Failed to load model {}", path));
-  }
-
-  if (!reader.Warning().empty()) {
-    fmt::print("Warning: {}\n", reader.Warning());
-  }
-
-  auto const &attributes{reader.GetAttrib()};
-  auto const &shapes{reader.GetShapes()};
-
-  m_vertices.clear();
-  m_indices.clear();
-
-  // A key:value map with key=Vertex and value=index
-  std::unordered_map<Vertex, GLuint> hash{};
-
-  // Loop over shapes
-  for (auto const &shape : shapes) {
-    // Loop over indices
-    for (auto const offset : iter::range(shape.mesh.indices.size())) {
-      // Access to vertex
-      auto const index{shape.mesh.indices.at(offset)};
-
-      // Vertex position
-      auto const startIndex{3 * index.vertex_index};
-      auto const vx{attributes.vertices.at(startIndex + 0)};
-      auto const vy{attributes.vertices.at(startIndex + 1)};
-      auto const vz{attributes.vertices.at(startIndex + 2)};
-
-      Vertex const vertex{.position = {vx, vy, vz}};
-
-      // If map doesn't contain this vertex
-      if (!hash.contains(vertex)) {
-        // Add this index (size of m_vertices)
-        hash[vertex] = m_vertices.size();
-        // Add this vertex
-        m_vertices.push_back(vertex);
-      }
-
-      m_indices.push_back(hash[vertex]);
-    }
-  }
-}
-
-void Window::onPaint() {
-
-
-  // Clear color buffer and depth buffer
-  abcg::glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-  abcg::glViewport(0, 0, m_viewportSize.x, m_viewportSize.y);
-
-  abcg::glUseProgram(m_program);
-
-  // Set uniform variables for viewMatrix and projMatrix
-  // These matrices are used for every scene object
-  abcg::glUniformMatrix4fv(m_viewMatrixLocation, 1, GL_FALSE, &m_camera.getViewMatrix()[0][0]);
-  abcg::glUniformMatrix4fv(m_projMatrixLocation, 1, GL_FALSE, &m_camera.getProjMatrix()[0][0]);
-
-  abcg::glBindVertexArray(m_VAO);
-
-
-  mat4 model;
-  for (auto i : iter::range(0, N_PREDIOS))
-  {
-      model = mat4(1.0f);
-      model = translate(model, centros.at(i));
-      // não tem rotate
-      model = scale(model, escalas.at(i));
-
-      abcg::glUniformMatrix4fv(m_modelMatrixLocation, 1, GL_FALSE, &model[0][0]);
-      abcg::glUniform4f(m_colorLocation, cores.at(i).x, cores.at(i).y, cores.at(i).z, 1.0f);
-      abcg::glDrawElements(GL_TRIANGLES, m_indices.size(), GL_UNSIGNED_INT, nullptr);
-  }
-  abcg::glBindVertexArray(0);
-
-  // Draw ground
-  m_ground.paint();
-
-
-  abcg::glUseProgram(0);
+    
+    abcg::glBindVertexArray(0);
+    chao.paint(); // Desenha o chão
+    abcg::glUseProgram(0);
 }
 
 void Window::onPaintUI() { abcg::OpenGLWindow::onPaintUI(); }
@@ -205,16 +143,17 @@ void Window::onPaintUI() { abcg::OpenGLWindow::onPaintUI(); }
 void Window::onResize(glm::ivec2 const &size) 
 {
     tamanhoTela = size;
-    m_camera.computeProjectionMatrix(size);
+    camera.computeProjectionMatrix(size);
 }
 
-void Window::onUpdate() {
-  auto const deltaTime{gsl::narrow_cast<float>(getDeltaTime())};
+void Window::onUpdate() 
+{
+    auto const deltaTime{gsl::narrow_cast<float>(getDeltaTime())};
 
-  // Update LookAt camera
-  m_camera.dolly(m_dollySpeed * deltaTime);
-  m_camera.truck(m_truckSpeed * deltaTime);
-  m_camera.pan(m_panSpeed * deltaTime);
+    // Update camera
+    camera.dolly(m_dollySpeed * deltaTime);
+    camera.truck(m_truckSpeed * deltaTime);
+    camera.pan(m_panSpeed * deltaTime);
 }
 
 void Window::onDestroy() 
@@ -224,4 +163,46 @@ void Window::onDestroy()
     abcg::glDeleteBuffers(1, &EBO);
     abcg::glDeleteBuffers(1, &VBO);
     abcg::glDeleteVertexArrays(1, &VAO);
+}
+
+// Importado diretamente das aulas
+void Window::loadModelFromFile(string_view path) 
+{
+    tinyobj::ObjReader reader;
+
+    if (!reader.ParseFromFile(path.data())) 
+        throw abcg::RuntimeError(fmt::format("Falha ao carregar modelo {} {}\n", path, reader.Error().empty() ? "" : "(" + reader.Error() + ")"));
+    if (!reader.Warning().empty()) 
+        fmt::print("Warning: {}\n", reader.Warning());
+    
+    auto const &attributes{reader.GetAttrib()};
+    auto const &shapes{reader.GetShapes()};
+
+    vertices.clear();
+    indices.clear();
+
+    unordered_map<Vertex, GLuint> hash{};
+
+
+    for (auto const &shape : shapes) 
+    {
+        for (auto const offset : iter::range(shape.mesh.indices.size())) 
+        {
+
+            auto const index{shape.mesh.indices.at(offset)};
+            auto const startIndex{3 * index.vertex_index};
+            auto const vx{attributes.vertices.at(startIndex + 0)};
+            auto const vy{attributes.vertices.at(startIndex + 1)};
+            auto const vz{attributes.vertices.at(startIndex + 2)};
+            Vertex const vertex{.position = {vx, vy, vz}};
+
+            if (!hash.contains(vertex)) 
+            {
+                hash[vertex] = vertices.size();
+                vertices.push_back(vertex);
+            }
+
+            indices.push_back(hash[vertex]);
+        }
+    }
 }

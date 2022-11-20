@@ -6,8 +6,8 @@ in vec4 fragColor;
 
 out vec4 outColor;
 
-void main() {
- if (gl_FrontFacing) outColor = 0.5 * fragColor;
- else outColor = fragColor;
- // }
+void main() 
+{
+    if (gl_FrontFacing) outColor = 0.5 * fragColor;
+    else outColor = fragColor;
 }

@@ -31,8 +31,8 @@ void Chao::create(GLuint prog)
     abcg::glBindVertexArray(0);
 
     // Localização das variáveis Uniform do shader
-    modelMatrixLoc = abcg::glGetUniformLocation(prog, "model");
-    colorLoc = abcg::glGetUniformLocation(prog, "cor");
+    model = abcg::glGetUniformLocation(prog, "model");
+    cor = abcg::glGetUniformLocation(prog, "cor");
 }
 
 void Chao::paint() 
@@ -40,7 +40,7 @@ void Chao::paint()
     abcg::glBindVertexArray(VAO);
     mat4 matrizModel{1.0f};
     abcg::glUniformMatrix4fv(model, 1, GL_FALSE, &matrizModel[0][0]);
-    abcg::glUniform4f(colorLoc, 0.3f, 0.3f, 0.3f, 1.0f);
+    abcg::glUniform4f(cor, 0.3f, 0.3f, 0.3f, 1.0f);
     abcg::glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     abcg::glBindVertexArray(0);
 }

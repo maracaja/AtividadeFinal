@@ -1,19 +1,18 @@
 #version 300 es
 
-layout(location = 0) in vec3 inPosition;
+layout(location = 0) in vec3 posicao;
 
-uniform vec4 color;
-uniform mat4 modelMatrix;
-uniform mat4 viewMatrix;
-uniform mat4 projMatrix;
+uniform vec4 cor;
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 proj;
 
 out vec4 fragColor;
 
-void main() {
-  vec4 posEyeSpace = viewMatrix * modelMatrix * vec4(inPosition, 1);
-
-  float i = 1.0 - (-posEyeSpace.z / 10.0);
-  fragColor = vec4(i, i, i, 1) * color; //+ vec4(0.125, 0.125, 0.125, 0.5);
-
-  gl_Position = projMatrix * posEyeSpace;
+void main() 
+{
+    vec4 posEye = view * model * vec4(posicao, 1);
+    float i = 1.0 + 0.1 * posEye.z;
+    fragColor = vec4(i, i, i, 1) * cor;
+    gl_Position = proj * posEye;
 }
