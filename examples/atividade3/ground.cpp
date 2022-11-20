@@ -2,10 +2,10 @@
 
 void Ground::create(GLuint program) {
   // Unit quad on the xz plane
-  std::array<glm::vec3, 4> vertices{{{-0.5f, 0.0f, +0.5f},
-                                     {-0.5f, 0.0f, -0.5f},
-                                     {+0.5f, 0.0f, +0.5f},
-                                     {+0.5f, 0.0f, -0.5f}}};
+  std::array<glm::vec3, 4> vertices{{{-5.0f, 0.0f, 5.0f},
+                                     {-5.0f, 0.0f, -5.0f},
+                                     {5.0f, 0.0f, 5.0f},
+                                     {5.0f, 0.0f, -5.0f}}};
 
   // Generate VBO
   abcg::glGenBuffers(1, &m_VBO);
@@ -36,21 +36,20 @@ void Ground::paint() {
 
   // Draw a grid of 2N+1 x 2N+1 tiles on the xz plane, centered around the
   // origin
-  auto const N{5};
-  for (auto const z : iter::range(-N, N + 1)) {
-    for (auto const x : iter::range(-N, N + 1)) {
+  //auto const N{5};
+  //for (auto const z : iter::range(-N, N + 1)) {
+    //for (auto const x : iter::range(-N, N + 1)) {
       // Set model matrix as a translation matrix
       glm::mat4 model{1.0f};
-      model = glm::translate(model, glm::vec3(x, 0.0f, z));
+      //model = glm::translate(model, glm::vec3(x, 0.0f, z));
       abcg::glUniformMatrix4fv(m_modelMatrixLoc, 1, GL_FALSE, &model[0][0]);
 
-      // Set color (checkerboard pattern)
-      auto const gray{(z + x) % 2 == 0 ? 1.0f : 0.5f};
-      abcg::glUniform4f(m_colorLoc, gray, gray, gray, 1.0f);
+      abcg::glUniform4f(m_colorLoc, 0.3f, 0.3f, 0.3f, 1.0f);
 
       abcg::glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-    }
-  }
+    //}
+  //}
+  
 
   abcg::glBindVertexArray(0);
 }

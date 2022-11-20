@@ -62,7 +62,7 @@ void Window::onCreate() {
       centros.emplace_back(vec3(distPos(r), 0.0f, distPos(r)));    
   }
 
-  abcg::glClearColor(0.1f, 0.2f, 0.2f, 0.5f); //////// era preto
+  abcg::glClearColor(0.2f, 0.2f, 0.2f, 0.5f); //////// era preto
 
   // Enable depth buffering
   abcg::glEnable(GL_DEPTH_TEST);

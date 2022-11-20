@@ -2,6 +2,7 @@
 #define GROUND_HPP_
 
 #include "abcgOpenGL.hpp"
+#include "asfalto.hpp"
 
 class Ground {
 public:
