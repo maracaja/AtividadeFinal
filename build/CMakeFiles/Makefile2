@@ -296,7 +296,7 @@ abcg/CMakeFiles/abcg.dir/clean:
 abcg/external/imgui/CMakeFiles/imgui.dir/all:
 	$(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32 "Built target imgui"
 .PHONY : abcg/external/imgui/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -322,7 +322,7 @@ abcg/external/imgui/CMakeFiles/imgui.dir/clean:
 abcg/external/fmt/CMakeFiles/fmt.dir/all:
 	$(MAKE) $(MAKESILENT) -f abcg/external/fmt/CMakeFiles/fmt.dir/build.make abcg/external/fmt/CMakeFiles/fmt.dir/depend
 	$(MAKE) $(MAKESILENT) -f abcg/external/fmt/CMakeFiles/fmt.dir/build.make abcg/external/fmt/CMakeFiles/fmt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=24,25 "Built target fmt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=23,24 "Built target fmt"
 .PHONY : abcg/external/fmt/CMakeFiles/fmt.dir/all
 
 # Build rule for subdir invocation for target.
@@ -350,7 +350,7 @@ examples/city/CMakeFiles/city.dir/all: abcg/external/imgui/CMakeFiles/imgui.dir/
 examples/city/CMakeFiles/city.dir/all: abcg/external/fmt/CMakeFiles/fmt.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/city/CMakeFiles/city.dir/build.make examples/city/CMakeFiles/city.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/city/CMakeFiles/city.dir/build.make examples/city/CMakeFiles/city.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=19,20,21,22,23 "Built target city"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=18,19,20,21,22 "Built target city"
 .PHONY : examples/city/CMakeFiles/city.dir/all
 
 # Build rule for subdir invocation for target.
@@ -378,12 +378,12 @@ examples/atividade3/CMakeFiles/atividade3.dir/all: abcg/external/imgui/CMakeFile
 examples/atividade3/CMakeFiles/atividade3.dir/all: abcg/external/fmt/CMakeFiles/fmt.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=13,14,15,16,17,18 "Built target atividade3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=13,14,15,16,17 "Built target atividade3"
 .PHONY : examples/atividade3/CMakeFiles/atividade3.dir/all
 
 # Build rule for subdir invocation for target.
 examples/atividade3/CMakeFiles/atividade3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/atividade3/CMakeFiles/atividade3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles 0
 .PHONY : examples/atividade3/CMakeFiles/atividade3.dir/rule

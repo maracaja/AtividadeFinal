@@ -69,38 +69,10 @@ include examples/atividade3/CMakeFiles/atividade3.dir/progress.make
 # Include the compile flags for this target's objects.
 include examples/atividade3/CMakeFiles/atividade3.dir/flags.make
 
-examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/flags.make
-examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o: /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp
-examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o -MF CMakeFiles/atividade3.dir/camera.cpp.o.d -o CMakeFiles/atividade3.dir/camera.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp
-
-examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atividade3.dir/camera.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp > CMakeFiles/atividade3.dir/camera.cpp.i
-
-examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atividade3.dir/camera.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp -o CMakeFiles/atividade3.dir/camera.cpp.s
-
-examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/flags.make
-examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.o: /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/ground.cpp
-examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.o -MF CMakeFiles/atividade3.dir/ground.cpp.o.d -o CMakeFiles/atividade3.dir/ground.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/ground.cpp
-
-examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atividade3.dir/ground.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/ground.cpp > CMakeFiles/atividade3.dir/ground.cpp.i
-
-examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atividade3.dir/ground.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/ground.cpp -o CMakeFiles/atividade3.dir/ground.cpp.s
-
 examples/atividade3/CMakeFiles/atividade3.dir/main.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/flags.make
 examples/atividade3/CMakeFiles/atividade3.dir/main.cpp.o: /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/main.cpp
 examples/atividade3/CMakeFiles/atividade3.dir/main.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object examples/atividade3/CMakeFiles/atividade3.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/atividade3/CMakeFiles/atividade3.dir/main.cpp.o"
 	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade3/CMakeFiles/atividade3.dir/main.cpp.o -MF CMakeFiles/atividade3.dir/main.cpp.o.d -o CMakeFiles/atividade3.dir/main.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/main.cpp
 
 examples/atividade3/CMakeFiles/atividade3.dir/main.cpp.i: cmake_force
@@ -114,7 +86,7 @@ examples/atividade3/CMakeFiles/atividade3.dir/main.cpp.s: cmake_force
 examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/flags.make
 examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.o: /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/window.cpp
 examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.o"
 	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.o -MF CMakeFiles/atividade3.dir/window.cpp.o.d -o CMakeFiles/atividade3.dir/window.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/window.cpp
 
 examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.i: cmake_force
@@ -125,36 +97,48 @@ examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atividade3.dir/window.cpp.s"
 	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/window.cpp -o CMakeFiles/atividade3.dir/window.cpp.s
 
-examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/flags.make
-examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.o: /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/asfalto.cpp
-examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.o -MF CMakeFiles/atividade3.dir/asfalto.cpp.o.d -o CMakeFiles/atividade3.dir/asfalto.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/asfalto.cpp
+examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/flags.make
+examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.o: /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/chao.cpp
+examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.o"
+	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.o -MF CMakeFiles/atividade3.dir/chao.cpp.o.d -o CMakeFiles/atividade3.dir/chao.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/chao.cpp
 
-examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atividade3.dir/asfalto.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/asfalto.cpp > CMakeFiles/atividade3.dir/asfalto.cpp.i
+examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atividade3.dir/chao.cpp.i"
+	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/chao.cpp > CMakeFiles/atividade3.dir/chao.cpp.i
 
-examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atividade3.dir/asfalto.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/asfalto.cpp -o CMakeFiles/atividade3.dir/asfalto.cpp.s
+examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atividade3.dir/chao.cpp.s"
+	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/chao.cpp -o CMakeFiles/atividade3.dir/chao.cpp.s
+
+examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/flags.make
+examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o: /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp
+examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o: examples/atividade3/CMakeFiles/atividade3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o"
+	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o -MF CMakeFiles/atividade3.dir/camera.cpp.o.d -o CMakeFiles/atividade3.dir/camera.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp
+
+examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atividade3.dir/camera.cpp.i"
+	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp > CMakeFiles/atividade3.dir/camera.cpp.i
+
+examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atividade3.dir/camera.cpp.s"
+	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp -o CMakeFiles/atividade3.dir/camera.cpp.s
 
 # Object files for target atividade3
 atividade3_OBJECTS = \
-"CMakeFiles/atividade3.dir/camera.cpp.o" \
-"CMakeFiles/atividade3.dir/ground.cpp.o" \
 "CMakeFiles/atividade3.dir/main.cpp.o" \
 "CMakeFiles/atividade3.dir/window.cpp.o" \
-"CMakeFiles/atividade3.dir/asfalto.cpp.o"
+"CMakeFiles/atividade3.dir/chao.cpp.o" \
+"CMakeFiles/atividade3.dir/camera.cpp.o"
 
 # External object files for target atividade3
 atividade3_EXTERNAL_OBJECTS =
 
-bin/atividade3: examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o
-bin/atividade3: examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.o
 bin/atividade3: examples/atividade3/CMakeFiles/atividade3.dir/main.cpp.o
 bin/atividade3: examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.o
-bin/atividade3: examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.o
+bin/atividade3: examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.o
+bin/atividade3: examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o
 bin/atividade3: examples/atividade3/CMakeFiles/atividade3.dir/build.make
 bin/atividade3: abcg/libabcg.a
 bin/atividade3: /usr/lib64/libGLX.so
@@ -166,7 +150,7 @@ bin/atividade3: /usr/lib64/libSDL2main.a
 bin/atividade3: /usr/lib64/libSDL2.so
 bin/atividade3: /usr/lib64/libSDL2_image.so
 bin/atividade3: examples/atividade3/CMakeFiles/atividade3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../../bin/atividade3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../bin/atividade3"
 	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/bin/cmake -E remove_directory /home/maracaja/Programacao/CG/Atividade3/build/bin/atividade3
 	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/atividade3.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3 && /usr/bin/cmake -E make_directory /home/maracaja/Programacao/CG/Atividade3/build/bin/atividade3.dir

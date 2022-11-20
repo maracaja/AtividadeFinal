@@ -116,16 +116,6 @@
 },
 {
   "directory": "/home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3",
-  "command": "/usr/lib64/ccache/c++  -I/home/maracaja/Programacao/CG/Atividade3/abcg -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/fmt -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/glm/.. -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external/tiny_obj_loader -O3 -DNDEBUG -flto=auto -fno-fat-lto-objects -flto=auto -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/atividade3.dir/camera.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp",
-  "file": "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp"
-},
-{
-  "directory": "/home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3",
-  "command": "/usr/lib64/ccache/c++  -I/home/maracaja/Programacao/CG/Atividade3/abcg -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/fmt -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/glm/.. -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external/tiny_obj_loader -O3 -DNDEBUG -flto=auto -fno-fat-lto-objects -flto=auto -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/atividade3.dir/ground.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/ground.cpp",
-  "file": "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/ground.cpp"
-},
-{
-  "directory": "/home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3",
   "command": "/usr/lib64/ccache/c++  -I/home/maracaja/Programacao/CG/Atividade3/abcg -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/fmt -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/glm/.. -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external/tiny_obj_loader -O3 -DNDEBUG -flto=auto -fno-fat-lto-objects -flto=auto -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/atividade3.dir/main.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/main.cpp",
   "file": "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/main.cpp"
 },
@@ -136,7 +126,12 @@
 },
 {
   "directory": "/home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3",
-  "command": "/usr/lib64/ccache/c++  -I/home/maracaja/Programacao/CG/Atividade3/abcg -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/fmt -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/glm/.. -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external/tiny_obj_loader -O3 -DNDEBUG -flto=auto -fno-fat-lto-objects -flto=auto -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/atividade3.dir/asfalto.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/asfalto.cpp",
-  "file": "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/asfalto.cpp"
+  "command": "/usr/lib64/ccache/c++  -I/home/maracaja/Programacao/CG/Atividade3/abcg -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/fmt -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/glm/.. -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external/tiny_obj_loader -O3 -DNDEBUG -flto=auto -fno-fat-lto-objects -flto=auto -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/atividade3.dir/chao.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/chao.cpp",
+  "file": "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/chao.cpp"
+},
+{
+  "directory": "/home/maracaja/Programacao/CG/Atividade3/build/examples/atividade3",
+  "command": "/usr/lib64/ccache/c++  -I/home/maracaja/Programacao/CG/Atividade3/abcg -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/fmt -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/glm/.. -I/home/maracaja/Programacao/CG/Atividade3/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external -isystem /home/maracaja/Programacao/CG/Atividade3/abcg/external/tiny_obj_loader -O3 -DNDEBUG -flto=auto -fno-fat-lto-objects -flto=auto -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/atividade3.dir/camera.cpp.o -c /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp",
+  "file": "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp"
 }
 ]

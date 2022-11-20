@@ -8,9 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/asfalto.cpp" "examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.o" "gcc" "examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.o.d"
   "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.cpp" "examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o" "gcc" "examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.o.d"
-  "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/ground.cpp" "examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.o" "gcc" "examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.o.d"
+  "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/chao.cpp" "examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.o" "gcc" "examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.o.d"
   "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/main.cpp" "examples/atividade3/CMakeFiles/atividade3.dir/main.cpp.o" "gcc" "examples/atividade3/CMakeFiles/atividade3.dir/main.cpp.o.d"
   "/home/maracaja/Programacao/CG/Atividade3/examples/atividade3/window.cpp" "examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.o" "gcc" "examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.o.d"
   )

@@ -609,5 +609,4 @@ examples/atividade3/CMakeFiles/atividade3.dir/window.cpp.o: \
  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLWindow.hpp \
  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.hpp \
  /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/camera.hpp \
- /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/ground.hpp \
- /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/asfalto.hpp
+ /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/chao.hpp

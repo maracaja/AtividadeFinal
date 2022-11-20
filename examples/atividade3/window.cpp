@@ -3,11 +3,13 @@
 #include <unordered_map>
 
 // Explicit specialization of std::hash for Vertex
-template <> struct std::hash<Vertex> {
-  size_t operator()(Vertex const &vertex) const noexcept {
-    auto const h1{std::hash<glm::vec3>()(vertex.position)};
-    return h1;
-  }
+template <> struct hash<Vertex> 
+{
+    size_t operator()(Vertex const &vertex) const noexcept 
+    {
+        auto const h1{hash<vec3>()(vertex.position)};
+        return h1;
+    }
 };
 
 void Window::onEvent(SDL_Event const &event) {
@@ -46,79 +48,65 @@ void Window::onEvent(SDL_Event const &event) {
   }
 }
 
-void Window::onCreate() {
-  auto const &assetsPath{abcg::Application::getAssetsPath()};
+void Window::onCreate() 
+{
+    auto const &assetsPath{abcg::Application::getAssetsPath()};
 
-  r.seed(chrono::steady_clock::now().time_since_epoch().count());
-  uniform_real_distribution distSup(0.25f, 0.75f);
-  uniform_real_distribution distAlt(0.5f, 2.5f);
-  uniform_real_distribution distPos(-4.0f, 4.0f);
-  uniform_real_distribution distCor(0.7f, 1.0f);
+    r.seed(chrono::steady_clock::now().time_since_epoch().count()); // Gerador de números pseudo-aleatórios
+    uniform_real_distribution distSup(0.25f, 0.75f); // Valores de largura e comprimento dos prédios
+    uniform_real_distribution distAlt(0.5f, 2.5f); // Valores de altura dos prédios
+    uniform_real_distribution distPos(-4.0f, 4.0f); // Valores de posicionamento dos prédios
+    uniform_real_distribution distCor(0.7f, 1.0f); // Valores dos canais RGB das cores dos prédios
 
-  for ([[maybe_unused]] auto _ : iter::range(0, N_PREDIOS))
-  {
-      cores.emplace_back(vec3(distCor(r), distCor(r), distCor(r)));
-      escalas.emplace_back(vec3(distSup(r), distAlt(r), distSup(r)));
-      centros.emplace_back(vec3(distPos(r), 0.0f, distPos(r)));    
-  }
+    for ([[maybe_unused]] auto _ : iter::range(0, N_PREDIOS))
+    {
+        cores.emplace_back(vec3(distCor(r), distCor(r), distCor(r)));
+        escalas.emplace_back(vec3(distSup(r), distAlt(r), distSup(r)));
+        centros.emplace_back(vec3(distPos(r), 0.0f, distPos(r)));    
+    }
 
-  abcg::glClearColor(0.2f, 0.2f, 0.2f, 0.5f); //////// era preto
+    abcg::glClearColor(0.2f, 0.2f, 0.2f, 1.0f); // Cor padrão do fundo (cinza escuro)
+    abcg::glEnable(GL_DEPTH_TEST);
 
-  // Enable depth buffering
-  abcg::glEnable(GL_DEPTH_TEST);
+    prog = abcg::createOpenGLProgram
+    ({
+        {.source = assetsPath + "lookat.vert", .stage = abcg::ShaderStage::Vertex},
+        {.source = assetsPath + "lookat.frag", .stage = abcg::ShaderStage::Fragment}
+    });
+  
+    // Localização das variáveis uniformes
+    viewLoc = abcg::glGetUniformLocation(m_program, "view");
+    projLoc = abcg::glGetUniformLocation(m_program, "proj");
+    modelLoc = abcg::glGetUniformLocation(m_program, "model");
+    colorLoc = abcg::glGetUniformLocation(m_program, "cor");
 
-  // Create program
-  m_program = abcg::createOpenGLProgram
-  ({
-      {.source = assetsPath + "lookat.vert", .stage = abcg::ShaderStage::Vertex},
-      {.source = assetsPath + "lookat.frag", .stage = abcg::ShaderStage::Fragment}
-  });
+    chao.create(prog); // Cria o chão do cenário
+    loadModelFromFile(assetsPath + "box.obj"); // Carrega modelo box.obj
 
-  m_ground.create(m_program);
+    // Criação do VBO
+    abcg::glGenBuffers(1, &VBO);
+    abcg::glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    abcg::glBufferData(GL_ARRAY_BUFFER, sizeof(vertices.at(0)) * vertices.size(), vertices.data(), GL_STATIC_DRAW);
+    abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-  // Get location of uniform variables
-  m_viewMatrixLocation = abcg::glGetUniformLocation(m_program, "viewMatrix");
-  m_projMatrixLocation = abcg::glGetUniformLocation(m_program, "projMatrix");
-  m_modelMatrixLocation = abcg::glGetUniformLocation(m_program, "modelMatrix");
-  m_colorLocation = abcg::glGetUniformLocation(m_program, "color");
+    // Criação do EBO
+    abcg::glGenBuffers(1, &EBO);
+    abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    abcg::glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices.at(0)) * indices.size(), indices.data(), GL_STATIC_DRAW);
+    abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
-  // Load model
-  loadModelFromFile(assetsPath + "bunny.obj");
+    // Criação do VAO
+    abcg::glGenVertexArrays(1, &VAO);
+    abcg::glBindVertexArray(VAO);
 
-  // Generate VBO
-  abcg::glGenBuffers(1, &m_VBO);
-  abcg::glBindBuffer(GL_ARRAY_BUFFER, m_VBO);
-  abcg::glBufferData(GL_ARRAY_BUFFER,
-                     sizeof(m_vertices.at(0)) * m_vertices.size(),
-                     m_vertices.data(), GL_STATIC_DRAW);
-  abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
+    abcg::glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    auto const posicao{abcg::glGetAttribLocation(m_program, "posicao")};
+    abcg::glEnableVertexAttribArray(posicao);
+    abcg::glVertexAttribPointer(posicao, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), nullptr);
+    abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
+    abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
 
-  // Generate EBO
-  abcg::glGenBuffers(1, &m_EBO);
-  abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_EBO);
-  abcg::glBufferData(GL_ELEMENT_ARRAY_BUFFER,
-                     sizeof(m_indices.at(0)) * m_indices.size(),
-                     m_indices.data(), GL_STATIC_DRAW);
-  abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-
-  // Create VAO
-  abcg::glGenVertexArrays(1, &m_VAO);
-
-  // Bind vertex attributes to current VAO
-  abcg::glBindVertexArray(m_VAO);
-
-  abcg::glBindBuffer(GL_ARRAY_BUFFER, m_VBO);
-  auto const positionAttribute{
-      abcg::glGetAttribLocation(m_program, "inPosition")};
-  abcg::glEnableVertexAttribArray(positionAttribute);
-  abcg::glVertexAttribPointer(positionAttribute, 3, GL_FLOAT, GL_FALSE,
-                              sizeof(Vertex), nullptr);
-  abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-  abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_EBO);
-
-  // End of binding to current VAO
-  abcg::glBindVertexArray(0);
+    abcg::glBindVertexArray(0);
 }
 
 void Window::loadModelFromFile(std::string_view path) {
@@ -191,8 +179,6 @@ void Window::onPaint() {
   abcg::glBindVertexArray(m_VAO);
 
 
-  //////////////////////////////////// Escalas e posições aleatórias para Box.obj ( a conferir, este está até que fácil)
-
   mat4 model;
   for (auto i : iter::range(0, N_PREDIOS))
   {
@@ -205,71 +191,21 @@ void Window::onPaint() {
       abcg::glUniform4f(m_colorLocation, cores.at(i).x, cores.at(i).y, cores.at(i).z, 1.0f);
       abcg::glDrawElements(GL_TRIANGLES, m_indices.size(), GL_UNSIGNED_INT, nullptr);
   }
-  // Draw white bunny
-
-  /*
-  glm::mat4 model{1.0f};
-  model = glm::translate(model, glm::vec3(-1.0f, 0.0f, 0.0f)); 
-  model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0, 1, 0));
-  model = glm::scale(model, glm::vec3(0.5f));
-
-  abcg::glUniformMatrix4fv(m_modelMatrixLocation, 1, GL_FALSE, &model[0][0]);
-  abcg::glUniform4f(m_colorLocation, 1.0f, 1.0f, 1.0f, 1.0f);
-  abcg::glDrawElements(GL_TRIANGLES, m_indices.size(), GL_UNSIGNED_INT,
-                       nullptr);
-
-  // Draw yellow bunny
-  model = glm::mat4(1.0);
-  model = glm::translate(model, glm::vec3(0.0f, 0.0f, -1.0f));
-  model = glm::scale(model, glm::vec3(0.5f));
-
-  abcg::glUniformMatrix4fv(m_modelMatrixLocation, 1, GL_FALSE, &model[0][0]);
-  abcg::glUniform4f(m_colorLocation, 1.0f, 0.8f, 0.0f, 1.0f);
-  abcg::glDrawElements(GL_TRIANGLES, m_indices.size(), GL_UNSIGNED_INT,
-                       nullptr);
-
-  // Draw blue bunny
-  model = glm::mat4(1.0);
-  model = glm::translate(model, glm::vec3(1.0f, 0.0f, 0.0f));
-  model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(0, 1, 0));
-  model = glm::scale(model, glm::vec3(0.5f));
-
-  abcg::glUniformMatrix4fv(m_modelMatrixLocation, 1, GL_FALSE, &model[0][0]);
-  abcg::glUniform4f(m_colorLocation, 0.0f, 0.8f, 1.0f, 1.0f);
-  abcg::glDrawElements(GL_TRIANGLES, m_indices.size(), GL_UNSIGNED_INT,
-                       nullptr);
-
-  // Draw red bunny
-  model = glm::mat4(1.0);
-  model = glm::scale(model, glm::vec3(0.1f));
-
-  abcg::glUniformMatrix4fv(m_modelMatrixLocation, 1, GL_FALSE, &model[0][0]);
-  abcg::glUniform4f(m_colorLocation, 1.0f, 0.25f, 0.25f, 1.0f);
-  abcg::glDrawElements(GL_TRIANGLES, m_indices.size(), GL_UNSIGNED_INT,
-                       nullptr);
-*/
   abcg::glBindVertexArray(0);
 
   // Draw ground
   m_ground.paint();
+
 
   abcg::glUseProgram(0);
 }
 
 void Window::onPaintUI() { abcg::OpenGLWindow::onPaintUI(); }
 
-void Window::onResize(glm::ivec2 const &size) {
-  m_viewportSize = size;
-  m_camera.computeProjectionMatrix(size);
-}
-
-void Window::onDestroy() {
-  m_ground.destroy();
-
-  abcg::glDeleteProgram(m_program);
-  abcg::glDeleteBuffers(1, &m_EBO);
-  abcg::glDeleteBuffers(1, &m_VBO);
-  abcg::glDeleteVertexArrays(1, &m_VAO);
+void Window::onResize(glm::ivec2 const &size) 
+{
+    tamanhoTela = size;
+    m_camera.computeProjectionMatrix(size);
 }
 
 void Window::onUpdate() {
@@ -279,4 +215,13 @@ void Window::onUpdate() {
   m_camera.dolly(m_dollySpeed * deltaTime);
   m_camera.truck(m_truckSpeed * deltaTime);
   m_camera.pan(m_panSpeed * deltaTime);
+}
+
+void Window::onDestroy() 
+{
+    chao.destroy();
+    abcg::glDeleteProgram(prog);
+    abcg::glDeleteBuffers(1, &EBO);
+    abcg::glDeleteBuffers(1, &VBO);
+    abcg::glDeleteVertexArrays(1, &VAO);
 }

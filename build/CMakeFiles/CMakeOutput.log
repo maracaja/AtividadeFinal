@@ -28,10 +28,10 @@ The CXX compiler identification is GNU, found in "/home/maracaja/Programacao/CG/
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0678a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0678a.dir/build.make CMakeFiles/cmTC_0678a.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dca84/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dca84.dir/build.make CMakeFiles/cmTC_dca84.dir/build
 gmake[1]: Entering directory '/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0678a.dir/CMakeCCompilerABI.c.o
-/usr/lib64/ccache/cc   -v -o CMakeFiles/cmTC_0678a.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Building C object CMakeFiles/cmTC_dca84.dir/CMakeCCompilerABI.c.o
+/usr/lib64/ccache/cc   -v -o CMakeFiles/cmTC_dca84.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -66,9 +66,9 @@ GNU assembler version 2.39.0 (x86_64-suse-linux) using BFD version (GNU Binutils
 COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/
 LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/
 COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_b79cd.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b79cd.dir/CMakeCCompilerABI.c.'
-Linking C executable cmTC_0678a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0678a.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc  -v CMakeFiles/cmTC_0678a.dir/CMakeCCompilerABI.c.o -o cmTC_0678a 
+Linking C executable cmTC_dca84
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dca84.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -v CMakeFiles/cmTC_dca84.dir/CMakeCCompilerABI.c.o -o cmTC_dca84 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper
@@ -81,9 +81,9 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 12.2.1 20221020 [revision 0aaef83351473e8f4eb774f8f999bbe87a4866d7] (SUSE Linux) 
 COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/
 LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0678a' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0678a.'
- /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMnK0ew.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0678a /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_0678a.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0678a' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0678a.'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dca84' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dca84.'
+ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cc09OEAI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dca84 /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_dca84.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dca84' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dca84.'
 gmake[1]: Leaving directory '/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp'
 
 
@@ -109,10 +109,10 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0678a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0678a.dir/build.make CMakeFiles/cmTC_0678a.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dca84/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dca84.dir/build.make CMakeFiles/cmTC_dca84.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_0678a.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/lib64/ccache/cc   -v -o CMakeFiles/cmTC_0678a.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Building C object CMakeFiles/cmTC_dca84.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/lib64/ccache/cc   -v -o CMakeFiles/cmTC_dca84.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -148,9 +148,9 @@ Parsed C implicit link information from above output:
   ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/]
   ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_b79cd.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b79cd.dir/CMakeCCompilerABI.c.']
-  ignore line: [Linking C executable cmTC_0678a]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0678a.dir/link.txt --verbose=1]
-  ignore line: [/usr/lib64/ccache/cc  -v CMakeFiles/cmTC_0678a.dir/CMakeCCompilerABI.c.o -o cmTC_0678a ]
+  ignore line: [Linking C executable cmTC_dca84]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dca84.dir/link.txt --verbose=1]
+  ignore line: [/usr/lib64/ccache/cc  -v CMakeFiles/cmTC_dca84.dir/CMakeCCompilerABI.c.o -o cmTC_dca84 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper]
@@ -163,13 +163,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 12.2.1 20221020 [revision 0aaef83351473e8f4eb774f8f999bbe87a4866d7] (SUSE Linux) ]
   ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0678a' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0678a.']
-  link line: [ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMnK0ew.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0678a /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_0678a.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dca84' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dca84.']
+  link line: [ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cc09OEAI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dca84 /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_dca84.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o]
     arg [/usr/lib64/gcc/x86_64-suse-linux/12/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccMnK0ew.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc09OEAI.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -182,7 +182,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_0678a] ==> ignore
+    arg [cmTC_dca84] ==> ignore
     arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o]
     arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o]
     arg [/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o]
@@ -192,7 +192,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib]
     arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../..] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../..]
-    arg [CMakeFiles/cmTC_0678a.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_dca84.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -224,10 +224,10 @@ Parsed C implicit link information from above output:
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fa2ef/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fa2ef.dir/build.make CMakeFiles/cmTC_fa2ef.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_eecfd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_eecfd.dir/build.make CMakeFiles/cmTC_eecfd.dir/build
 gmake[1]: Entering directory '/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fa2ef.dir/CMakeCXXCompilerABI.cpp.o
-/usr/lib64/ccache/c++   -v -o CMakeFiles/cmTC_fa2ef.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Building CXX object CMakeFiles/cmTC_eecfd.dir/CMakeCXXCompilerABI.cpp.o
+/usr/lib64/ccache/c++   -v -o CMakeFiles/cmTC_eecfd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -265,9 +265,9 @@ GNU assembler version 2.39.0 (x86_64-suse-linux) using BFD version (GNU Binutils
 COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/
 LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/
 COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_e2a28.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2a28.dir/CMakeCXXCompilerABI.cpp.'
-Linking CXX executable cmTC_fa2ef
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa2ef.dir/link.txt --verbose=1
-/usr/lib64/ccache/c++  -v CMakeFiles/cmTC_fa2ef.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_fa2ef 
+Linking CXX executable cmTC_eecfd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eecfd.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -v CMakeFiles/cmTC_eecfd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_eecfd 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper
@@ -280,9 +280,9 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 12.2.1 20221020 [revision 0aaef83351473e8f4eb774f8f999bbe87a4866d7] (SUSE Linux) 
 COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/
 LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fa2ef' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fa2ef.'
- /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEzFbI9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fa2ef /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_fa2ef.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fa2ef' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fa2ef.'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_eecfd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_eecfd.'
+ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjgjAGX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_eecfd /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_eecfd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_eecfd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_eecfd.'
 gmake[1]: Leaving directory '/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp'
 
 
@@ -314,10 +314,10 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fa2ef/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fa2ef.dir/build.make CMakeFiles/cmTC_fa2ef.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_eecfd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_eecfd.dir/build.make CMakeFiles/cmTC_eecfd.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_fa2ef.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/lib64/ccache/c++   -v -o CMakeFiles/cmTC_fa2ef.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_eecfd.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/lib64/ccache/c++   -v -o CMakeFiles/cmTC_eecfd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -356,9 +356,9 @@ Parsed CXX implicit link information from above output:
   ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/]
   ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_e2a28.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2a28.dir/CMakeCXXCompilerABI.cpp.']
-  ignore line: [Linking CXX executable cmTC_fa2ef]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa2ef.dir/link.txt --verbose=1]
-  ignore line: [/usr/lib64/ccache/c++  -v CMakeFiles/cmTC_fa2ef.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_fa2ef ]
+  ignore line: [Linking CXX executable cmTC_eecfd]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eecfd.dir/link.txt --verbose=1]
+  ignore line: [/usr/lib64/ccache/c++  -v CMakeFiles/cmTC_eecfd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_eecfd ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper]
@@ -371,13 +371,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 12.2.1 20221020 [revision 0aaef83351473e8f4eb774f8f999bbe87a4866d7] (SUSE Linux) ]
   ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fa2ef' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fa2ef.']
-  link line: [ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEzFbI9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fa2ef /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_fa2ef.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_eecfd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_eecfd.']
+  link line: [ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjgjAGX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_eecfd /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_eecfd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o]
     arg [/usr/lib64/gcc/x86_64-suse-linux/12/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccEzFbI9.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccjgjAGX.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -390,7 +390,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_fa2ef] ==> ignore
+    arg [cmTC_eecfd] ==> ignore
     arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o]
     arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o]
     arg [/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o]
@@ -400,7 +400,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib]
     arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../..] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../..]
-    arg [CMakeFiles/cmTC_fa2ef.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_eecfd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -428,14 +428,14 @@ Parsed CXX implicit link information from above output:
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
 Change Dir: /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6893f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6893f.dir/build.make CMakeFiles/cmTC_6893f.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e6a80/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e6a80.dir/build.make CMakeFiles/cmTC_e6a80.dir/build
 gmake[1]: Entrando no diretório '/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp'
 
-Building C object CMakeFiles/cmTC_6893f.dir/src.c.o
-/usr/lib64/ccache/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_6893f.dir/src.c.o -c /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_6893f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6893f.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc CMakeFiles/cmTC_6893f.dir/src.c.o -o cmTC_6893f 
+Building C object CMakeFiles/cmTC_e6a80.dir/src.c.o
+/usr/lib64/ccache/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e6a80.dir/src.c.o -c /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e6a80
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6a80.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc CMakeFiles/cmTC_e6a80.dir/src.c.o -o cmTC_e6a80 
 gmake[1]: Saindo do diretório '/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/CMakeTmp'
 
 

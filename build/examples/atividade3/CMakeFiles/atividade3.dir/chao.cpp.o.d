@@ -1,7 +1,7 @@
-examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.o: \
- /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/ground.cpp \
+examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.o: \
+ /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/chao.cpp \
  /usr/include/stdc-predef.h \
- /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/ground.hpp \
+ /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/chao.hpp \
  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGL.hpp \
  /home/maracaja/Programacao/CG/Atividade3/abcg/abcg.hpp \
  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgApplication.hpp \
@@ -601,8 +601,4 @@ examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.o: \
  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLShader.hpp \
  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgShader.hpp \
  /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLWindow.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.hpp \
- /home/maracaja/Programacao/CG/Atividade3/examples/atividade3/asfalto.hpp \
- /usr/include/c++/12/random /usr/include/c++/12/bits/random.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/opt_random.h \
- /usr/include/c++/12/bits/random.tcc
+ /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.hpp

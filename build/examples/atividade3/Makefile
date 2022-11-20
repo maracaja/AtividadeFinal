@@ -130,30 +130,6 @@ atividade3/fast:
 	cd /home/maracaja/Programacao/CG/Atividade3/build && $(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/build
 .PHONY : atividade3/fast
 
-asfalto.o: asfalto.cpp.o
-.PHONY : asfalto.o
-
-# target to build an object file
-asfalto.cpp.o:
-	cd /home/maracaja/Programacao/CG/Atividade3/build && $(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.o
-.PHONY : asfalto.cpp.o
-
-asfalto.i: asfalto.cpp.i
-.PHONY : asfalto.i
-
-# target to preprocess a source file
-asfalto.cpp.i:
-	cd /home/maracaja/Programacao/CG/Atividade3/build && $(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.i
-.PHONY : asfalto.cpp.i
-
-asfalto.s: asfalto.cpp.s
-.PHONY : asfalto.s
-
-# target to generate assembly for a file
-asfalto.cpp.s:
-	cd /home/maracaja/Programacao/CG/Atividade3/build && $(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/asfalto.cpp.s
-.PHONY : asfalto.cpp.s
-
 camera.o: camera.cpp.o
 .PHONY : camera.o
 
@@ -178,29 +154,29 @@ camera.cpp.s:
 	cd /home/maracaja/Programacao/CG/Atividade3/build && $(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
-ground.o: ground.cpp.o
-.PHONY : ground.o
+chao.o: chao.cpp.o
+.PHONY : chao.o
 
 # target to build an object file
-ground.cpp.o:
-	cd /home/maracaja/Programacao/CG/Atividade3/build && $(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.o
-.PHONY : ground.cpp.o
+chao.cpp.o:
+	cd /home/maracaja/Programacao/CG/Atividade3/build && $(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.o
+.PHONY : chao.cpp.o
 
-ground.i: ground.cpp.i
-.PHONY : ground.i
+chao.i: chao.cpp.i
+.PHONY : chao.i
 
 # target to preprocess a source file
-ground.cpp.i:
-	cd /home/maracaja/Programacao/CG/Atividade3/build && $(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.i
-.PHONY : ground.cpp.i
+chao.cpp.i:
+	cd /home/maracaja/Programacao/CG/Atividade3/build && $(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.i
+.PHONY : chao.cpp.i
 
-ground.s: ground.cpp.s
-.PHONY : ground.s
+chao.s: chao.cpp.s
+.PHONY : chao.s
 
 # target to generate assembly for a file
-ground.cpp.s:
-	cd /home/maracaja/Programacao/CG/Atividade3/build && $(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/ground.cpp.s
-.PHONY : ground.cpp.s
+chao.cpp.s:
+	cd /home/maracaja/Programacao/CG/Atividade3/build && $(MAKE) $(MAKESILENT) -f examples/atividade3/CMakeFiles/atividade3.dir/build.make examples/atividade3/CMakeFiles/atividade3.dir/chao.cpp.s
+.PHONY : chao.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -259,15 +235,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... atividade3"
-	@echo "... asfalto.o"
-	@echo "... asfalto.i"
-	@echo "... asfalto.s"
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
-	@echo "... ground.o"
-	@echo "... ground.i"
-	@echo "... ground.s"
+	@echo "... chao.o"
+	@echo "... chao.i"
+	@echo "... chao.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
