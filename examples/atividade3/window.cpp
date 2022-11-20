@@ -2,7 +2,6 @@
 
 #include <unordered_map>
 
-// Explicit specialization of std::hash for Vertex
 template <> struct std::hash<Vertex> 
 {
     size_t operator()(Vertex const &vertex) const noexcept 
@@ -11,42 +10,6 @@ template <> struct std::hash<Vertex>
         return h1;
     }
 };
-
-void Window::onEvent(SDL_Event const &event) {
-  if (event.type == SDL_KEYDOWN) {
-    if (event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w)
-      m_dollySpeed = 1.0f;
-    if (event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s)
-      m_dollySpeed = -1.0f;
-    if (event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a)
-      m_panSpeed = -1.0f;
-    if (event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_d)
-      m_panSpeed = 1.0f;
-    if (event.key.keysym.sym == SDLK_q)
-      m_truckSpeed = -1.0f;
-    if (event.key.keysym.sym == SDLK_e)
-      m_truckSpeed = 1.0f;
-  }
-  if (event.type == SDL_KEYUP) {
-    if ((event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w) &&
-        m_dollySpeed > 0)
-      m_dollySpeed = 0.0f;
-    if ((event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s) &&
-        m_dollySpeed < 0)
-      m_dollySpeed = 0.0f;
-    if ((event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a) &&
-        m_panSpeed < 0)
-      m_panSpeed = 0.0f;
-    if ((event.key.keysym.sym == SDLK_RIGHT ||
-         event.key.keysym.sym == SDLK_d) &&
-        m_panSpeed > 0)
-      m_panSpeed = 0.0f;
-    if (event.key.keysym.sym == SDLK_q && m_truckSpeed < 0)
-      m_truckSpeed = 0.0f;
-    if (event.key.keysym.sym == SDLK_e && m_truckSpeed > 0)
-      m_truckSpeed = 0.0f;
-  }
-}
 
 void Window::onCreate() 
 {
@@ -140,7 +103,7 @@ void Window::onPaint()
 
 void Window::onPaintUI() { abcg::OpenGLWindow::onPaintUI(); }
 
-void Window::onResize(glm::ivec2 const &size) 
+void Window::onResize(ivec2 const &size) 
 {
     tamanhoTela = size;
     camera.computeProjectionMatrix(size);
@@ -154,6 +117,42 @@ void Window::onUpdate()
     camera.dolly(m_dollySpeed * deltaTime);
     camera.truck(m_truckSpeed * deltaTime);
     camera.pan(m_panSpeed * deltaTime);
+}
+
+void Window::onEvent(SDL_Event const &event) {
+  if (event.type == SDL_KEYDOWN) {
+    if (event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w)
+      m_dollySpeed = 1.0f;
+    if (event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s)
+      m_dollySpeed = -1.0f;
+    if (event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a)
+      m_panSpeed = -1.0f;
+    if (event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_d)
+      m_panSpeed = 1.0f;
+    if (event.key.keysym.sym == SDLK_q)
+      m_truckSpeed = -1.0f;
+    if (event.key.keysym.sym == SDLK_e)
+      m_truckSpeed = 1.0f;
+  }
+  if (event.type == SDL_KEYUP) {
+    if ((event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w) &&
+        m_dollySpeed > 0)
+      m_dollySpeed = 0.0f;
+    if ((event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s) &&
+        m_dollySpeed < 0)
+      m_dollySpeed = 0.0f;
+    if ((event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a) &&
+        m_panSpeed < 0)
+      m_panSpeed = 0.0f;
+    if ((event.key.keysym.sym == SDLK_RIGHT ||
+         event.key.keysym.sym == SDLK_d) &&
+        m_panSpeed > 0)
+      m_panSpeed = 0.0f;
+    if (event.key.keysym.sym == SDLK_q && m_truckSpeed < 0)
+      m_truckSpeed = 0.0f;
+    if (event.key.keysym.sym == SDLK_e && m_truckSpeed > 0)
+      m_truckSpeed = 0.0f;
+  }
 }
 
 void Window::onDestroy() 

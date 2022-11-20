@@ -1,6 +1,6 @@
 # Atividade 3
 #### Sérgio Maracajá Junior - RA 11000315
-#### Vinícius Lacerda Gonsalez - RA 11____15
+#### Vinícius Lacerda Gonsalez - RA 11126315
 
 * * *
 
@@ -72,4 +72,32 @@ Neste método, são eliminadas as estruturas VAO e VBO, com uso dos métodos ded
 
 ### window.hpp
 
+Este arquivo de cabeçalho reúne todos as variáveis e métodos que centralizam as funcionalidades da aplicação. Logo na linha 9, é definido um total de 100 "prédios" no cenário.
+-   Entre as linhas 14 a 18, é definida a mesma `struct Vertex` definida nas notas de aula;
+-   Na sequência, é definida a classe `Window` (linhas 20 a 59):
+    -   Entre as linhas 23 e 29, são criados os métodos da classe `abcg::OpenGLWindow` que são sobrescritos – e detalhados na seção de `window.cpp`;
+    -   Na linha 32, a variável `tamanhoTela` é declarada. Ela será útil para o caso de redimensionamento da janela;
+    -   Nas linhas 34 a 37, os arrays e buffers são inicializados, bem como a variável que armazena o programa;
+    -   A localização das variáveis dos shaders estão inicializadas no trecho de linhas 39-42;
+    -   Entre as linhas 44 e 47, são instanciadas a câmera e as variáveis que definem as três velocidades que definem seu movimento;
+    -   O objeto `chao` é declarado na linha 49, seguindo a implementação descrita anteriormente;
+    -   Nas linhas 50 e 51, vetores de vértices e índices dos entes que serão desenhados são declarados;
+    -   Na linha 53, é declarado um gerador de números pseudo-aleatórios. Os vetores de linhas 54 a 56 definem os dados para a confecção de cada um dos 100 prédios (ou o valor que for alterado no `define` da linha 9):
+        -   `cores` armazena os valores dos canais RGB para cada um dos prédios;
+        -   `escalas` define os valores de escala em cada uma das três dimensões, que converterá o cubo de `box.obj` em paralelepípedos de diferentes proporções;
+        -   `centros` armazena as coordenadas espaciais do centro da face inferior de cada um desses paralelepípedos.
+    -   Por último, é declarado o método `loadModelFromFile`, extraído diretamente das notas de aula, com alterações pontuais.
+
+
 ### window.cpp
+
+Este código-fonte implementa o definido em `window.hpp`. No início, a definição da Hash de `Vertex` segue o implementado em exemplos de aula (linhas 5-12).
+
+#### onCreate – linhas 14 a 74
+
+O código deste método inicia-se carregando o endereço lógico da pasta `assets`. A seguir, o gerador pseudo-aleatório `r` é semeado com o relógio do computador.
+-   Quatro distribuições uniformes são inicializadas:
+    -   `distSup` define os valores das escalas de largura e comprimento dos edifícios, delimitado entre 25% e 75% da medida original do modelo;
+    -   `distAlt` define os valores possíveis da escala de altura dos edifícios, entre 0,5x e 2,5x a altura do modelo original;
+    -   `distPos` define os valores de coordenadas no terreno entre -4 e +4 em ambas as direções. Com o limite de tamanho em superfície, é garantido que todos os elementos estarão dispostos sobre o quadrado de coordenadas -5 a +5 em ambas as direções;
+    -   `distCor` define os canais RGB como sendo pelo menos 70% do valor máximo, gerando
