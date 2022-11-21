@@ -2,6 +2,7 @@
 
 #include <unordered_map>
 
+<<<<<<< Updated upstream
 template <> struct std::hash<Vertex> 
 {
     size_t operator()(Vertex const &vertex) const noexcept 
