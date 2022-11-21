@@ -74,17 +74,16 @@ include CMakeFiles/foo.dir/flags.make
 
 CMakeFiles/foo.dir/foo.c.o: CMakeFiles/foo.dir/flags.make
 CMakeFiles/foo.dir/foo.c.o: /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
-CMakeFiles/foo.dir/foo.c.o: CMakeFiles/foo.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/foo.dir/foo.c.o"
-	/home/maracaja/bin/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/foo.dir/foo.c.o -MF CMakeFiles/foo.dir/foo.c.o.d -o CMakeFiles/foo.dir/foo.c.o -c /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+	/usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/foo.dir/foo.c.o -c /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
 
 CMakeFiles/foo.dir/foo.c.i: cmake_force
 	@echo "Preprocessing C source to CMakeFiles/foo.dir/foo.c.i"
-	/home/maracaja/bin/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c > CMakeFiles/foo.dir/foo.c.i
+	/usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c > CMakeFiles/foo.dir/foo.c.i
 
 CMakeFiles/foo.dir/foo.c.s: cmake_force
 	@echo "Compiling C source to assembly CMakeFiles/foo.dir/foo.c.s"
-	/home/maracaja/bin/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c -o CMakeFiles/foo.dir/foo.c.s
+	/usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c -o CMakeFiles/foo.dir/foo.c.s
 
 # Object files for target foo
 foo_OBJECTS = \

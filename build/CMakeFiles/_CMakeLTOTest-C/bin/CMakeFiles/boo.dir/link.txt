@@ -1,1 +1,1 @@
-/home/maracaja/bin/emsdk/upstream/emscripten/emcc -flto=thin @CMakeFiles/boo.dir/objects1.rsp -o boo.js @CMakeFiles/boo.dir/linklibs.rsp
+/usr/lib64/ccache/cc -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 

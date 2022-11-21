@@ -85,13 +85,17 @@ A aplicação da câmera acabou por ser uma adaptação do LookAt, uma vez que a
 
 ### camera.cpp
 
-Utilizando o princípio do LookAt que, com o novo ângulo de observação, converte o deslocamento para frente e para trás em um *zoom*, na prática, temos a adição aos métodos originais dos métodos privados listados abaixo, que impedem o movimento da câmera para uma distância exagerada:
+Utilizando o princípio do LookAt que, com o novo ângulo de observação, converte o deslocamento para frente e para trás em um *zoom*, na prática. A distância da perspectiva foi configurada em 10.0 (linha 9), permitindo uma visualização praticamente integral dos elementos em todas as posições, exceto nos pontos mais próximos aos extremos das diagonais.
+Temos a adição aos métodos originais dos métodos privados listados abaixo, que impedem o movimento da câmera para uma distância exagerada:
 
-#### travaCamera – linhas 52 a 60
+#### travaCamera – linhas 49 a 57
 
 Aqui, é testado se as coordenadas de superfície não ultrapassam as coordenadas do chão estabelecidas anteriormente. Logo, devem manter-se entre -5 e 5. Já para a altura, os limites têm a mesma dimensão, mas partem do 0 (altura do solo) à altura máxima 10, formando um cubo de posições viáveis.
+Este método é invocado antes de `computeViewMatrix` nos métodos `dolly`, `truck` e `pan`, impedindo que a visualização da câmera se afaste demais no resultado final.
 
-#### extremo
+#### extremo – linhas 60 a 63
+
+Este método verifica se a câmera atingiu uma das situações extremas listadas no método `travaCamera` após um dos cálculos realizados, impedindo que algum movimento impróprio ocorra nestas posições. Ele é uma condição que limita o cálculo de `at` nos casos em que os deslocamentos de `dolly` ou `truck` são acionados. `pan` não se encaixa neste caso pois é uma rotação simples.
 
 
 ### window.hpp
@@ -119,9 +123,34 @@ Este código-fonte implementa o definido em `window.hpp`. No início, a definiç
 
 #### onCreate – linhas 14 a 74
 
-O código deste método inicia-se carregando o endereço lógico da pasta `assets`. A seguir, o gerador pseudo-aleatório `r` é semeado com o relógio do computador.
--   Quatro distribuições uniformes são inicializadas:
+O código deste método inicia-se carregando o endereço lógico da pasta `assets` (linha 16). A seguir, o gerador pseudo-aleatório `r` é semeado com o relógio do computador (linha 18).
+-   Quatro distribuições uniformes são inicializadas (linhas 19 a 22):
     -   `distSup` define os valores das escalas de largura e comprimento dos edifícios, delimitado entre 25% e 75% da medida original do modelo;
     -   `distAlt` define os valores possíveis da escala de altura dos edifícios, entre 0,5x e 2,5x a altura do modelo original;
     -   `distPos` define os valores de coordenadas no terreno entre -4 e +4 em ambas as direções. Com o limite de tamanho em superfície, é garantido que todos os elementos estarão dispostos sobre o quadrado de coordenadas -5 a +5 em ambas as direções;
-    -   `distCor` define os canais RGB como sendo pelo menos 70% do valor máximo, gerando
+    -   `distCor` define os canais RGB como sendo pelo menos 70% do valor máximo, gerando cores claras, visando atrasar o escurecimento gradual com a distância.
+-   Os dados dos prédios são armazenados nos vetores carregando os valores aleatórios (laço `for` das linhas 25 a 30);
+-   O fundo da aplicação é configurado como sendo cinza 20% (linha 32);
+-   O programa dos shaders é carregado no trecho de linhas 35-39, e suas variáveis uniformes são referenciadas no bloco de linhas 42-45;
+-   Nas linhas 47 e 48, temos a criação do objeto `chao` e, em seguida, o modelo `box.obj` é carregado;
+-   Na sequência (linhas 51 a 73), temos os algoritmos de criação e preenchimento do VBO, do EBO e do VAO com os dados gerados.
+
+#### onPaint – linhas 76 a 102
+
+O destaque da implementação deste método é o laço `for` (linhas 88-97) que desenha os elementos que representam os prédios percorrendo os três vetores (`centros`, `escalas` e `cores`). Na linha 100, temos a chamada ao método `paint()` de `chao`, completando a criação dos elementos gráficos.
+
+#### onPaintUI (linha 104) e onResize (linhas 106 a 110)
+
+O primeiro trata-se apenas da chamada a `onPaintUI` da classe mãe. `onResize` faz a variável `tamanhoTela` receber o novo tamanho e recalcula a matriz de projeção da câmera sob os novos parâmetros.
+
+#### onUpdate – linhas 112 a 118
+
+Usando o valor de `deltaTime`, atualiza a posição e a orientação da câmera usando `dolly`, `speed` e `truck` de acordo com as entradas do usuário armazenadas nas respectivas variáveis *Speed*.
+
+#### onEvent – linhas 120 a 147
+
+Por meio dos eventos de pressionamento e liberação das teclas, é possível configurar as velocidades em valores unitários de acordo com o descrito nos comandos listados em "**Sobre a aplicação**", no início deste relatório.
+
+#### onDestroy – linhas 149 a 156
+
+Neste método, temos a chamada do método `destroy` do chão, bem como o apagamento do programa e a liberação do VBO, do EBO e do VAO.

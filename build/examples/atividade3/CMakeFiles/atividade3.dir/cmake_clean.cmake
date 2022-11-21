@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/maracaja/Programacao/CG/Atividade3/public/atividade3.js"
-  "/home/maracaja/Programacao/CG/Atividade3/public/atividade3.pdb"
+  "../../bin/atividade3"
+  "../../bin/atividade3.pdb"
   "CMakeFiles/atividade3.dir/camera.cpp.o"
   "CMakeFiles/atividade3.dir/camera.cpp.o.d"
   "CMakeFiles/atividade3.dir/chao.cpp.o"
