@@ -1,33 +1,37 @@
 #ifndef CAMERA_HPP_
 #define CAMERA_HPP_
 
-#include <glm/mat4x4.hpp>
-#include <glm/vec3.hpp>
-
-using namespace glm;
+#include "abcg.hpp"
 
 class Camera {
 public:
-  void computeViewMatrix();
-  void computeProjectionMatrix(vec2 const &size);
+   void mouseMove(glm::ivec2 const &position);
+  void mousePress(glm::ivec2 const &position);
+  void mouseRelease(glm::ivec2 const &position);
+  void resizeViewport(glm::ivec2 const &size);
 
-  void dolly(float speed);
-  void truck(float speed);
-  void pan(float speed);
+  [[nodiscard]] glm::mat4 getRotation() const;
 
-  mat4 const &getViewMatrix() const { return m_viewMatrix; }
-  mat4 const &getProjMatrix() const { return m_projMatrix; }
+  void setAxis(glm::vec3 const axis) noexcept { m_axis = axis; }
+  void setVelocity(float const velocity) noexcept { m_velocity = velocity; }
+
 
 private:
-  vec3 m_eye{0.0f, 2.5f, 2.5f}; // Camera position
-  vec3 m_at{0.0f, 1.5f, 0.0f};  // Look-at point
-  vec3 m_up{0.0f, 1.0f, 0.0f};  // "up" direction
+  constexpr static float m_maxVelocity{glm::radians(720.0f)};
 
-  // Matrix to change from world space to camera space
-  mat4 m_viewMatrix;
+  glm::vec3 m_axis{1.0f};
+  glm::mat4 m_rotation{1.0f};
 
-  // Matrix to change from camera space to clip space
-  mat4 m_projMatrix;
+  glm::vec3 m_lastPosition{};
+  abcg::Timer m_lastTime{};
+
+  float m_velocity{};
+
+  bool m_mouseTracking{};
+
+  glm::ivec2 m_viewportSize{};
+
+  [[nodiscard]] glm::vec3 project(glm::vec2 const &mousePosition) const;
 };
 
 #endif
