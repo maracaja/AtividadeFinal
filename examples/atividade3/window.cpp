@@ -2,26 +2,6 @@
 
 #include <unordered_map>
 
-<<<<<<< Updated upstream
-template <> struct std::hash<Vertex> 
-{
-    size_t operator()(Vertex const &vertex) const noexcept 
-    {
-        auto const h1{hash<vec3>()(vertex.position)};
-        return h1;
-    }
-};
-
-void Window::onCreate() 
-{
-    auto const &assetsPath{abcg::Application::getAssetsPath()};
-
-    r.seed(chrono::steady_clock::now().time_since_epoch().count()); // Gerador de números pseudo-aleatórios
-    uniform_real_distribution distSup(0.25f, 0.75f); // Valores de largura e comprimento dos prédios
-    uniform_real_distribution distAlt(0.5f, 2.5f); // Valores de altura dos prédios
-    uniform_real_distribution distPos(-4.0f, 4.0f); // Valores de posicionamento dos prédios
-    uniform_real_distribution distCor(0.7f, 1.0f); // Valores dos canais RGB das cores dos prédios
-=======
 // Explicit specialization of std::hash for Vertex
 template <> struct std::hash<Vertex> {
   size_t operator()(Vertex const &vertex) const noexcept {
@@ -72,7 +52,6 @@ void Window::onCreate() {
     escalas.emplace_back(vec3(distSup(r), distAlt(r), distSup(r)));
     centros.emplace_back(vec3(distPos(r), 0.0f, distPos(r)));
   }
->>>>>>> Stashed changes
 
   abcg::glClearColor(0.2f, 0.2f, 0.2f,
                      1.0f); // Cor padrão do fundo (cinza escuro)
@@ -87,7 +66,7 @@ void Window::onCreate() {
   loadModelFromFile(assetsPath + "box.obj"); // Carrega modelo box.obj
 
   // Camera at (0,0,0) and looking towards the negative z
-  glm::vec3 const eye{0.0f, 0.0f, 0.0f};
+  glm::vec3 const eye{0.0f, 2.5f, 0.0f};
   glm::vec3 const at{0.0f, 0.0f, -1.0f};
   glm::vec3 const up{0.0f, 1.0f, 0.0f};
   m_viewMatrix = glm::lookAt(eye, at, up);
@@ -168,7 +147,7 @@ void Window::onPaintUI() {
     {
       ImGui::PushItemWidth(120);
       static std::size_t currentIndex{};
-      std::vector<std::string> const comboItems{"Perspective", "Orthographic"};
+      std::vector<std::string> const comboItems{"Ortográfica"};
 
       if (ImGui::BeginCombo("Projection",
                             comboItems.at(currentIndex).c_str())) {
@@ -186,7 +165,7 @@ void Window::onPaintUI() {
       ImGui::PushItemWidth(170);
       auto const aspect{gsl::narrow<float>(tamanhoTela.x) /
                         gsl::narrow<float>(tamanhoTela.y)};
-      if (currentIndex == 0) {
+      if (currentIndex == 1) {
         m_projMatrix =
             glm::perspective(glm::radians(m_FOV), aspect, 0.01f, 100.0f);
 
@@ -198,15 +177,8 @@ void Window::onPaintUI() {
       ImGui::PopItemWidth();
     }
 
-<<<<<<< Updated upstream
-void Window::onResize(ivec2 const &size) 
-{
-    tamanhoTela = size;
-    camera.computeProjectionMatrix(size);
-=======
     ImGui::End();
   }
->>>>>>> Stashed changes
 }
 
 void Window::onResize(glm::ivec2 const &size) {
@@ -223,58 +195,12 @@ void Window::onUpdate() {
   //                 glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 }
 
-<<<<<<< Updated upstream
-void Window::onEvent(SDL_Event const &event) {
-  if (event.type == SDL_KEYDOWN) {
-    if (event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w)
-      m_dollySpeed = 1.0f;
-    if (event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s)
-      m_dollySpeed = -1.0f;
-    if (event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a)
-      m_panSpeed = -1.0f;
-    if (event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_d)
-      m_panSpeed = 1.0f;
-    if (event.key.keysym.sym == SDLK_q)
-      m_truckSpeed = -1.0f;
-    if (event.key.keysym.sym == SDLK_e)
-      m_truckSpeed = 1.0f;
-  }
-  if (event.type == SDL_KEYUP) {
-    if ((event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w) &&
-        m_dollySpeed > 0)
-      m_dollySpeed = 0.0f;
-    if ((event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s) &&
-        m_dollySpeed < 0)
-      m_dollySpeed = 0.0f;
-    if ((event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a) &&
-        m_panSpeed < 0)
-      m_panSpeed = 0.0f;
-    if ((event.key.keysym.sym == SDLK_RIGHT ||
-         event.key.keysym.sym == SDLK_d) &&
-        m_panSpeed > 0)
-      m_panSpeed = 0.0f;
-    if (event.key.keysym.sym == SDLK_q && m_truckSpeed < 0)
-      m_truckSpeed = 0.0f;
-    if (event.key.keysym.sym == SDLK_e && m_truckSpeed > 0)
-      m_truckSpeed = 0.0f;
-  }
-}
-
-void Window::onDestroy() 
-{
-    chao.destroy();
-    abcg::glDeleteProgram(prog);
-    abcg::glDeleteBuffers(1, &EBO);
-    abcg::glDeleteBuffers(1, &VBO);
-    abcg::glDeleteVertexArrays(1, &VAO);
-=======
 void Window::onDestroy() {
   chao.destroy();
   abcg::glDeleteProgram(prog);
   abcg::glDeleteBuffers(1, &EBO);
   abcg::glDeleteBuffers(1, &VBO);
   abcg::glDeleteVertexArrays(1, &VAO);
->>>>>>> Stashed changes
 }
 
 // Importado diretamente das aulas
