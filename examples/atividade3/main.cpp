@@ -11,6 +11,7 @@ int main(int argc, char **argv)
         ({
             .width = 600,
             .height = 600,
+            .showFullscreenButton = false,
             .title = "Cidade - Vista Aérea"
         });
         app.run(window);

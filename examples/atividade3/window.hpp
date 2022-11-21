@@ -42,9 +42,9 @@ class Window : public abcg::OpenGLWindow
         GLint colorLoc{};
 
         Camera camera;
-        float m_dollySpeed{};
-        float m_truckSpeed{};
-        float m_panSpeed{};
+        float dollySpeed{};
+        float truckSpeed{};
+        float panSpeed{};
 
         Chao chao;
         vector<Vertex> vertices;

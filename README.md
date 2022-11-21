@@ -6,7 +6,16 @@
 
 ## Sobre a aplicação
 
-A presente aplicação apresenta um modelo simplificado de uma vista aérea de uma cidade, usando transformações de câmera para navegar na visualização e paralelepípedos de diferentes dimensões baseados em um mesmo modelo simulando prédios.
+A presente aplicação apresenta um modelo simplificado de uma vista aérea de uma cidade, usando transformações de câmera baseadas no *LookAt* para navegar na visualização e paralelepípedos de diferentes dimensões baseados em um mesmo modelo simulando prédios.
+O terreno onde estes edifícios simulados estão situados tem uma dimensão de 10 x 10 com centro na origem do sistema de coordenadas. Caso a câmera alcance um limite consistente em um cubo de lado 10 partindo da referência do solo, a aplicação não responderá até que seja inserido um comando que devolva a câmera para uma posição válida. A intenção neste caso foi evitar deslocamentos a distâncias que tendam ao infinito.
+
+Para a utilização da navegação, temos os seguintes comandos:
+-   **Seta para cima:** aumenta o zoom;
+-   **Seta para baixo:** afasta o zoom;
+-   **Seta para direita:** rotaciona no sentido horário;
+-   **Seta para esquerda:** rotaciona no sentido anti-horário;
+-   **Tecla 'A':** desloca-se lateralmente para a esquerda;
+-   **Tecla 'D':** desloca-se lateralmente para a direita.
 
 * * *
 
@@ -38,7 +47,7 @@ Segue abaixo a descrição do código-fonte, contido na pasta do projeto como ma
 
 ### main.cpp
 
-Este arquivo acabou por ser, na prática, uma repetição do código apresentado no LookAt, com o método `main` instanciando a aplicação (linha 7), gerando e configurando a janela onde a aplicação reside (linhas 8-15), e chamando seu método `run` (linha 16), tudo isso dentro de uma estrutura `try-catch`.
+Este arquivo acabou por ser, na prática, uma repetição do código apresentado no LookAt, com o método `main` instanciando a aplicação (linha 7), gerando e configurando a janela onde a aplicação reside (linhas 8-16), e chamando seu método `run` (linha 17), tudo isso dentro de uma estrutura `try-catch`. O botão de tela cheia foi retirado (linha 14), para acessar diretamente os comandos do teclado.
 
 
 ### chao.hpp
@@ -67,7 +76,22 @@ Neste método, são eliminadas as estruturas VAO e VBO, com uso dos métodos ded
 
 ### camera.hpp
 
+A aplicação da câmera acabou por ser uma adaptação do LookAt, uma vez que algumas tentativas de implementar o *trackball* ou deixar as movimentações automáticas tiveram resultados insatisfatórios. Assim, uma adaptação ao código original do lookAt é apresentada, com complementos que impedem que a câmera exceda limites de distância, sempre estando sobre o terreno delimitado pela classe `Chao`.
+-   Assim como no original, são declarados nas linhas 12 a 16 os métodos públicos que comandam a movimentação e os cálculos de matrizes de transformações. Os retornos dessas matrizes (declaradas de forma privada nas linhas 26 e 27) são apresentados pelos métodos presentes nas linhas 18 e 19;
+-   A câmera, localizada pela variável `eye` (linha 22), inicia com altura 2.5, valor compatível com a altura máxima configurada para um edifício. Também a posição apresenta-se deslocada à metade da distância máxima em relação à origem, também em 2.5, mas no eixo z;
+-   O ponto de visualização `at` é configurada como metade da altura inicial da câmera (1.25), o que proporciona uma visualização vista com uma componente "para baixo", tal como seria em uma vista aérea como a de um drone ou helicóptero;
+-   São declarados dois métodos privados nas linhas 29 e 30: `travaCamera()` impede o deslocamento da câmera para além dos limites do terreno; `extremo()` testa se a câmera já alcançou algum desses limites.
+
+
 ### camera.cpp
+
+Utilizando o princípio do LookAt que, com o novo ângulo de observação, converte o deslocamento para frente e para trás em um *zoom*, na prática, temos a adição aos métodos originais dos métodos privados listados abaixo, que impedem o movimento da câmera para uma distância exagerada:
+
+#### travaCamera – linhas 52 a 60
+
+Aqui, é testado se as coordenadas de superfície não ultrapassam as coordenadas do chão estabelecidas anteriormente. Logo, devem manter-se entre -5 e 5. Já para a altura, os limites têm a mesma dimensão, mas partem do 0 (altura do solo) à altura máxima 10, formando um cubo de posições viáveis.
+
+#### extremo
 
 
 ### window.hpp

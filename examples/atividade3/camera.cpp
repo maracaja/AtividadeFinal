@@ -1,50 +1,63 @@
 #include "camera.hpp"
-
+#include <math.h>
 #include <glm/gtc/matrix_transform.hpp>
 
-void Camera::computeProjectionMatrix(vec2 const &size) {
-  m_projMatrix = mat4(1.0f);
-  auto const aspect{size.x / size.y};
-  m_projMatrix = perspective(radians(70.0f), aspect, 0.1f, 10.0f);
+void Camera::computeProjectionMatrix(vec2 const &size) 
+{
+    proj = mat4(1.0f);
+    auto const aspect{size.x / size.y};
+    proj = perspective(radians(70.0f), aspect, 0.1f, 10.0f);
 }
 
-void Camera::computeViewMatrix() {
-  m_viewMatrix = lookAt(m_eye, m_at, m_up);
+void Camera::computeViewMatrix() 
+{
+    view = lookAt(eye, at, up);
 }
 
-void Camera::dolly(float speed) {
-  // Compute forward vector (view direction)
-  auto const forward{normalize(m_at - m_eye)};
-
-  // Move eye and center forward (speed > 0) or backward (speed < 0)
-  m_eye += forward * speed;
-  m_at += forward * speed;
-
-  computeViewMatrix();
+void Camera::dolly(float speed) 
+{
+    auto const forward{normalize(at - eye)};
+    eye += forward * speed;
+    if (!extremo()) at += forward * speed;
+    travaCamera();
+    computeViewMatrix();
 }
 
-void Camera::truck(float speed) {
-  // Compute forward vector (view direction)
-  auto const forward{normalize(m_at - m_eye)};
-  // Compute vector to the left
-  auto const left{cross(m_up, forward)};
-
-  // Move eye and center to the left (speed < 0) or to the right (speed > 0)
-  m_at -= left * speed;
-  m_eye -= left * speed;
-
-  computeViewMatrix();
+void Camera::truck(float speed) 
+{
+    auto const forward{normalize(at - eye)};
+    auto const left{cross(up, forward)};
+    eye -= left * speed;
+    if (!extremo()) at -= left * speed;
+    travaCamera();
+    computeViewMatrix();
 }
 
-void Camera::pan(float speed) {
-  mat4 transform{1.0f};
+void Camera::pan(float speed)
+{
+    mat4 transform{1.0f};
+    transform = translate(transform, eye);
+    transform = rotate(transform, -speed, up);
+    transform = translate(transform, -eye);
 
-  // Rotate camera around its local y axis
-  transform = translate(transform, m_eye);
-  transform = rotate(transform, -speed, m_up);
-  transform = translate(transform, -m_eye);
+    at = transform * vec4(at, 1.0f);
+    travaCamera();
+    computeViewMatrix();
+}
 
-  m_at = transform * vec4(m_at, 1.0f);
+// Impede que a câmera ultrapasse certos limites
+void Camera::travaCamera()
+{
+    if (eye.x > 5.0f) eye.x = 5.0f;
+    else if (eye.x < -5.0f) eye.x = -5.0f; 
+    if (eye.y > 10.0f) eye.y = 10.0f;
+    else if (eye.y < 0.0f) eye.y = 0.0f;
+    if (eye.z > 5.0f) eye.z = 5.0f;
+    else if (eye.z < -5.0f) eye.z = -5.0f;
+}
 
-  computeViewMatrix();
+// Verifica se a câmera alcançou os limites, visando impedir as outras movimentações
+bool Camera::extremo()
+{
+    return abs(eye.x) >= 5.0f || abs(eye.z) >= 5.0f || eye.y <= 0.0f || eye.y >= 10.0f;
 }

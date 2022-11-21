@@ -112,47 +112,38 @@ void Window::onResize(ivec2 const &size)
 void Window::onUpdate() 
 {
     auto const deltaTime{gsl::narrow_cast<float>(getDeltaTime())};
-
-    // Update camera
-    camera.dolly(m_dollySpeed * deltaTime);
-    camera.truck(m_truckSpeed * deltaTime);
-    camera.pan(m_panSpeed * deltaTime);
+    camera.dolly(dollySpeed * deltaTime);
+    camera.truck(truckSpeed * deltaTime);
+    camera.pan(panSpeed * deltaTime);
 }
 
-void Window::onEvent(SDL_Event const &event) {
-  if (event.type == SDL_KEYDOWN) {
-    if (event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w)
-      m_dollySpeed = 1.0f;
-    if (event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s)
-      m_dollySpeed = -1.0f;
-    if (event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a)
-      m_panSpeed = -1.0f;
-    if (event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_d)
-      m_panSpeed = 1.0f;
-    if (event.key.keysym.sym == SDLK_q)
-      m_truckSpeed = -1.0f;
-    if (event.key.keysym.sym == SDLK_e)
-      m_truckSpeed = 1.0f;
-  }
-  if (event.type == SDL_KEYUP) {
-    if ((event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w) &&
-        m_dollySpeed > 0)
-      m_dollySpeed = 0.0f;
-    if ((event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s) &&
-        m_dollySpeed < 0)
-      m_dollySpeed = 0.0f;
-    if ((event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a) &&
-        m_panSpeed < 0)
-      m_panSpeed = 0.0f;
-    if ((event.key.keysym.sym == SDLK_RIGHT ||
-         event.key.keysym.sym == SDLK_d) &&
-        m_panSpeed > 0)
-      m_panSpeed = 0.0f;
-    if (event.key.keysym.sym == SDLK_q && m_truckSpeed < 0)
-      m_truckSpeed = 0.0f;
-    if (event.key.keysym.sym == SDLK_e && m_truckSpeed > 0)
-      m_truckSpeed = 0.0f;
-  }
+void Window::onEvent(SDL_Event const &event) 
+{
+    if (event.type == SDL_KEYDOWN) 
+    {
+        if (event.key.keysym.sym == SDLK_UP) dollySpeed = 1.0f;
+        if (event.key.keysym.sym == SDLK_DOWN) dollySpeed = -1.0f;
+        if (event.key.keysym.sym == SDLK_LEFT) panSpeed = -1.0f;
+        if (event.key.keysym.sym == SDLK_RIGHT) panSpeed = 1.0f;
+        if (event.key.keysym.sym == SDLK_a) truckSpeed = -1.0f;
+        if (event.key.keysym.sym == SDLK_d) truckSpeed = 1.0f;
+    }
+
+    if (event.type == SDL_KEYUP) 
+    {
+        if (event.key.keysym.sym == SDLK_UP && dollySpeed > 0) 
+            dollySpeed = 0.0f;
+        if (event.key.keysym.sym == SDLK_DOWN && dollySpeed < 0) 
+            dollySpeed = 0.0f;
+        if (event.key.keysym.sym == SDLK_LEFT && panSpeed < 0)
+            panSpeed = 0.0f;
+        if (event.key.keysym.sym == SDLK_RIGHT && panSpeed > 0)
+            panSpeed = 0.0f;
+        if (event.key.keysym.sym == SDLK_a && truckSpeed < 0)
+            truckSpeed = 0.0f;
+        if (event.key.keysym.sym == SDLK_d && truckSpeed > 0)
+            truckSpeed = 0.0f;
+    }
 }
 
 void Window::onDestroy() 
