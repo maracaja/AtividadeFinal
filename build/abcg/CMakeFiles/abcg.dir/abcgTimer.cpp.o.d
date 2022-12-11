@@ -1,7 +1,7 @@
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o: \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTimer.cpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgTimer.cpp \
  /usr/include/stdc-predef.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgTimer.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgTimer.hpp \
  /usr/include/c++/12/chrono /usr/include/c++/12/bits/chrono.h \
  /usr/include/c++/12/ratio /usr/include/c++/12/type_traits \
  /usr/include/c++/12/x86_64-suse-linux/bits/c++config.h \

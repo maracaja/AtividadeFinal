@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp" "/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/main.cpp.o"
+  "/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp" "/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,7 +22,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake"
+  "/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

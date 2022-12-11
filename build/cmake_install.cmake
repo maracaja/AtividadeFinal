@@ -1,4 +1,4 @@
-# Install script for directory: /home/maracaja/Programacao/CG/Atividade3
+# Install script for directory: /home/maracaja/Programacao/CG/Atividade4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/maracaja/Programacao/CG/Atividade3/build/abcg/cmake_install.cmake")
+  include("/home/maracaja/Programacao/CG/Atividade4/build/abcg/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/maracaja/Programacao/CG/Atividade3/build/examples/cmake_install.cmake")
+  include("/home/maracaja/Programacao/CG/Atividade4/build/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/maracaja/Programacao/CG/Atividade3/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/maracaja/Programacao/CG/Atividade4/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

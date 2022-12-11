@@ -1,8 +1,8 @@
 abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_sdl.cpp.o: \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/imgui/imgui_impl_sdl.cpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imgui_impl_sdl.cpp \
  /usr/include/stdc-predef.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/imgui/imgui.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/imgui/imconfig.h \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imgui.h \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imconfig.h \
  /usr/lib64/gcc/x86_64-suse-linux/12/include/float.h \
  /usr/lib64/gcc/x86_64-suse-linux/12/include/stdarg.h \
  /usr/lib64/gcc/x86_64-suse-linux/12/include/stddef.h \
@@ -13,7 +13,7 @@ abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_sdl.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/imgui/imgui_impl_sdl.h \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imgui_impl_sdl.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \

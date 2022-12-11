@@ -1,4 +1,4 @@
-# Install script for directory: /home/maracaja/Programacao/CG/Atividade3/abcg/external
+# Install script for directory: /home/maracaja/Programacao/CG/Atividade4/abcg/external
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,31 +44,31 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/maracaja/Programacao/CG/Atividade3/build/abcg/external/tiny_obj_loader/cmake_install.cmake")
+  include("/home/maracaja/Programacao/CG/Atividade4/build/abcg/external/tiny_obj_loader/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/maracaja/Programacao/CG/Atividade3/build/abcg/external/imgui/cmake_install.cmake")
+  include("/home/maracaja/Programacao/CG/Atividade4/build/abcg/external/imgui/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/maracaja/Programacao/CG/Atividade3/build/abcg/external/cppitertools/cmake_install.cmake")
+  include("/home/maracaja/Programacao/CG/Atividade4/build/abcg/external/cppitertools/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/maracaja/Programacao/CG/Atividade3/build/abcg/external/fmt/cmake_install.cmake")
+  include("/home/maracaja/Programacao/CG/Atividade4/build/abcg/external/fmt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/maracaja/Programacao/CG/Atividade3/build/abcg/external/glm/cmake_install.cmake")
+  include("/home/maracaja/Programacao/CG/Atividade4/build/abcg/external/glm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/maracaja/Programacao/CG/Atividade3/build/abcg/external/gsl/cmake_install.cmake")
+  include("/home/maracaja/Programacao/CG/Atividade4/build/abcg/external/gsl/cmake_install.cmake")
 endif()
 

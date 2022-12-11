@@ -1,7 +1,7 @@
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.cpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGLFunction.cpp \
  /usr/include/stdc-predef.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLFunction.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGLFunction.hpp \
  /usr/include/c++/12/string_view /usr/include/c++/12/iosfwd \
  /usr/include/c++/12/x86_64-suse-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -58,11 +58,11 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: \
  /usr/include/c++/12/bits/ranges_base.h \
  /usr/include/c++/12/bits/max_size_type.h /usr/include/c++/12/numbers \
  /usr/include/c++/12/bits/string_view.tcc \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLExternal.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGLExternal.hpp \
  /usr/include/GL/glew.h /usr/include/c++/12/cstddef /usr/include/GL/glu.h \
  /usr/include/GL/gl.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgOpenGLError.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgException.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGLError.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgException.hpp \
  /usr/include/c++/12/stdexcept /usr/include/c++/12/exception \
  /usr/include/c++/12/bits/exception_ptr.h \
  /usr/include/c++/12/bits/cxxabi_init_exception.h \

@@ -1,4 +1,4 @@
-# Install script for directory: /home/maracaja/Programacao/CG/Atividade3/abcg/external/fmt
+# Install script for directory: /home/maracaja/Programacao/CG/Atividade4/abcg/external/fmt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

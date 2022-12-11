@@ -1,4 +1,4 @@
-# Install script for directory: /home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/src
+# Install script for directory: /home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles/_CMakeLTOTest-C/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-C/bin/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles/_CMakeLTOTest-C/bin/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

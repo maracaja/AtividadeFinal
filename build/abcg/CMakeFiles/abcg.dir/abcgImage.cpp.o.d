@@ -1,7 +1,7 @@
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgImage.cpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgImage.cpp \
  /usr/include/stdc-predef.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/abcgImage.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgImage.hpp \
  /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h /usr/include/SDL2/SDL_platform.h \
@@ -197,8 +197,8 @@ abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: \
  /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
  /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_locale.h \
  /usr/include/SDL2/SDL_misc.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/pointers \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_assert \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/pointers \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/gsl_assert \
  /usr/include/c++/12/exception /usr/include/c++/12/bits/exception_ptr.h \
  /usr/include/c++/12/bits/cxxabi_init_exception.h \
  /usr/include/c++/12/typeinfo /usr/include/c++/12/bits/hash_bytes.h \
@@ -302,9 +302,9 @@ abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: \
  /usr/include/c++/12/bits/ranges_uninitialized.h \
  /usr/include/c++/12/bits/uses_allocator_args.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/itertools.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/accumulate.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/itertools.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/accumulate.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
  /usr/include/c++/12/cassert /usr/include/assert.h \
  /usr/include/c++/12/functional /usr/include/c++/12/bits/std_function.h \
  /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
@@ -317,54 +317,54 @@ abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: \
  /usr/include/c++/12/bits/stl_bvector.h \
  /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/array \
  /usr/include/c++/12/variant /usr/include/c++/12/bits/parse_numbers.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iterbase.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/internal/iterbase.hpp \
  /usr/include/c++/12/cstddef /usr/include/c++/12/iterator \
  /usr/include/c++/12/bits/stream_iterator.h /usr/include/c++/12/optional \
  /usr/include/c++/12/utility /usr/include/c++/12/bits/stl_relops.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iterbase.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/batched.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iteratoriterator.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/chain.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iter_tuples.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/chunked.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/combinations.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/combinations_with_replacement.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/compress.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/count.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/range.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/cycle.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/dropwhile.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/filter.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/enumerate.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/filterfalse.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/groupby.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/imap.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/starmap.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/zip.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/permutations.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/powerset.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/product.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/repeat.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/reversed.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/slice.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/sliding_window.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/internal/iterbase.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/batched.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/internal/iteratoriterator.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/chain.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/internal/iter_tuples.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/chunked.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/combinations.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/combinations_with_replacement.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/compress.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/count.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/range.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/cycle.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/dropwhile.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/filter.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/enumerate.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/filterfalse.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/groupby.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/imap.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/starmap.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/zip.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/permutations.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/powerset.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/product.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/repeat.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/reversed.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/slice.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/sliding_window.hpp \
  /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_deque.h \
  /usr/include/c++/12/bits/deque.tcc \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/sorted.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/takewhile.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/unique_everseen.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/sorted.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/takewhile.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/unique_everseen.hpp \
  /usr/include/c++/12/unordered_set \
  /usr/include/c++/12/bits/unordered_set.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/cppitertools/unique_justseen.hpp \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_algorithm \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/span \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_byte \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/gsl_util \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/multi_span \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/unique_justseen.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/gsl \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/gsl_algorithm \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/span \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/gsl_byte \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/gsl_util \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/multi_span \
  /usr/include/c++/12/numeric /usr/include/c++/12/bits/stl_numeric.h \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/string_span \
- /home/maracaja/Programacao/CG/Atividade3/abcg/external/gsl/span_ext \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/string_span \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/span_ext \
  /usr/include/c++/12/cstring /usr/include/c++/12/span

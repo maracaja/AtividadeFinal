@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp" "/home/maracaja/Programacao/CG/Atividade3/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/foo.cpp.o"
+  "/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp" "/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/foo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
