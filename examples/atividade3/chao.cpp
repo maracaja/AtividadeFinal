@@ -27,6 +27,14 @@ void Chao::create(GLuint prog)
     auto const posicao{abcg::glGetAttribLocation(prog, "posicao")};
     abcg::glEnableVertexAttribArray(posicao);
     abcg::glVertexAttribPointer(posicao, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
+
+    auto const normalAttribute{abcg::glGetAttribLocation(prog, "inNormal")};
+    abcg::glEnableVertexAttribArray(normalAttribute);
+    auto const offset{offsetof(Vertex, normal)};
+    abcg::glVertexAttribPointer(normalAttribute, 3, GL_FLOAT, GL_FALSE,
+                                sizeof(Vertex),
+                                reinterpret_cast<void *>(offset));
+                                
     abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
     abcg::glBindVertexArray(0);
 
