@@ -601,4 +601,14 @@ examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.o: \
  /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGLShader.hpp \
  /home/maracaja/Programacao/CG/Atividade4/abcg/abcgShader.hpp \
  /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGLWindow.hpp \
- /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGLFunction.hpp
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGLFunction.hpp \
+ /usr/include/c++/12/filesystem /usr/include/c++/12/bits/fs_fwd.h \
+ /usr/include/c++/12/bits/fs_path.h /usr/include/c++/12/locale \
+ /usr/include/c++/12/bits/locale_facets_nonio.h \
+ /usr/include/c++/12/x86_64-suse-linux/bits/time_members.h \
+ /usr/include/c++/12/x86_64-suse-linux/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/12/bits/codecvt.h \
+ /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/12/bits/locale_conv.h /usr/include/c++/12/iomanip \
+ /usr/include/c++/12/bits/quoted_string.h /usr/include/c++/12/codecvt \
+ /usr/include/c++/12/bits/fs_dir.h /usr/include/c++/12/bits/fs_ops.h

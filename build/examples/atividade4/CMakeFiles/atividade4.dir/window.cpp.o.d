@@ -2,10 +2,7 @@ examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: \
  /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/window.cpp \
  /usr/include/stdc-predef.h \
  /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/window.hpp \
- /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGL.hpp \
- /home/maracaja/Programacao/CG/Atividade4/abcg/abcg.hpp \
- /home/maracaja/Programacao/CG/Atividade4/abcg/abcgApplication.hpp \
- /usr/include/c++/12/string \
+ /usr/include/c++/12/random /usr/include/c++/12/cmath \
  /usr/include/c++/12/x86_64-suse-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/12/x86_64-suse-linux/bits/os_defines.h \
@@ -15,56 +12,92 @@ examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: \
  /usr/include/gnu/stubs-64.h \
  /usr/include/c++/12/x86_64-suse-linux/bits/cpu_defines.h \
  /usr/include/c++/12/pstl/pstl_config.h \
- /usr/include/c++/12/bits/stringfwd.h \
- /usr/include/c++/12/bits/memoryfwd.h \
- /usr/include/c++/12/bits/char_traits.h \
- /usr/include/c++/12/bits/postypes.h /usr/include/c++/12/cwchar \
- /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
+ /usr/include/c++/12/bits/cpp_type_traits.h \
+ /usr/include/c++/12/ext/type_traits.h /usr/include/math.h \
+ /usr/include/bits/libc-header-start.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/12/bits/std_abs.h \
+ /usr/include/stdlib.h \
  /usr/lib64/gcc/x86_64-suse-linux/12/include/stddef.h \
- /usr/lib64/gcc/x86_64-suse-linux/12/include/stdarg.h \
- /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
- /usr/include/bits/types/mbstate_t.h \
- /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/c++/12/type_traits \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/sys/types.h /usr/include/bits/types/clock_t.h \
+ /usr/include/bits/types/clockid_t.h /usr/include/bits/types/time_t.h \
+ /usr/include/bits/types/timer_t.h /usr/include/bits/stdint-intn.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/endianness.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
+ /usr/include/bits/types/__sigset_t.h \
+ /usr/include/bits/types/struct_timeval.h \
+ /usr/include/bits/types/struct_timespec.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
+ /usr/include/bits/pthreadtypes-arch.h \
+ /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
+ /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ /usr/include/c++/12/bits/specfun.h \
+ /usr/include/c++/12/bits/stl_algobase.h \
+ /usr/include/c++/12/bits/functexcept.h \
+ /usr/include/c++/12/bits/exception_defines.h \
+ /usr/include/c++/12/ext/numeric_traits.h \
+ /usr/include/c++/12/bits/stl_pair.h /usr/include/c++/12/type_traits \
+ /usr/include/c++/12/bits/move.h /usr/include/c++/12/bits/utility.h \
  /usr/include/c++/12/compare /usr/include/c++/12/concepts \
- /usr/include/c++/12/bits/stl_construct.h /usr/include/c++/12/new \
- /usr/include/c++/12/bits/exception.h /usr/include/c++/12/bits/move.h \
  /usr/include/c++/12/bits/stl_iterator_base_types.h \
  /usr/include/c++/12/bits/iterator_concepts.h \
  /usr/include/c++/12/bits/ptr_traits.h \
  /usr/include/c++/12/bits/ranges_cmp.h \
  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
  /usr/include/c++/12/bits/concept_check.h \
- /usr/include/c++/12/debug/assertions.h /usr/include/c++/12/cstdint \
+ /usr/include/c++/12/debug/assertions.h \
+ /usr/include/c++/12/bits/stl_iterator.h /usr/include/c++/12/new \
+ /usr/include/c++/12/bits/exception.h \
+ /usr/include/c++/12/bits/stl_construct.h \
+ /usr/include/c++/12/debug/debug.h \
+ /usr/include/c++/12/bits/predefined_ops.h /usr/include/c++/12/limits \
+ /usr/include/c++/12/tr1/gamma.tcc \
+ /usr/include/c++/12/tr1/special_function_util.h \
+ /usr/include/c++/12/tr1/bessel_function.tcc \
+ /usr/include/c++/12/tr1/beta_function.tcc \
+ /usr/include/c++/12/tr1/ell_integral.tcc \
+ /usr/include/c++/12/tr1/exp_integral.tcc \
+ /usr/include/c++/12/tr1/hypergeometric.tcc \
+ /usr/include/c++/12/tr1/legendre_function.tcc \
+ /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/12/tr1/poly_hermite.tcc \
+ /usr/include/c++/12/tr1/poly_laguerre.tcc \
+ /usr/include/c++/12/tr1/riemann_zeta.tcc /usr/include/c++/12/cstdlib \
+ /usr/include/c++/12/string /usr/include/c++/12/bits/stringfwd.h \
+ /usr/include/c++/12/bits/memoryfwd.h \
+ /usr/include/c++/12/bits/char_traits.h \
+ /usr/include/c++/12/bits/postypes.h /usr/include/c++/12/cwchar \
+ /usr/include/wchar.h \
+ /usr/lib64/gcc/x86_64-suse-linux/12/include/stdarg.h \
+ /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h \
+ /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/c++/12/cstdint \
  /usr/lib64/gcc/x86_64-suse-linux/12/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/types.h \
- /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
- /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/c++/12/bits/allocator.h \
  /usr/include/c++/12/x86_64-suse-linux/bits/c++allocator.h \
  /usr/include/c++/12/bits/new_allocator.h \
- /usr/include/c++/12/bits/functexcept.h \
- /usr/include/c++/12/bits/exception_defines.h \
- /usr/include/c++/12/bits/cpp_type_traits.h \
  /usr/include/c++/12/bits/localefwd.h \
  /usr/include/c++/12/x86_64-suse-linux/bits/c++locale.h \
  /usr/include/c++/12/clocale /usr/include/locale.h \
  /usr/include/bits/locale.h /usr/include/c++/12/iosfwd \
  /usr/include/c++/12/cctype /usr/include/ctype.h \
- /usr/include/bits/endian.h /usr/include/bits/endianness.h \
  /usr/include/c++/12/bits/ostream_insert.h \
  /usr/include/c++/12/bits/cxxabi_forced.h \
- /usr/include/c++/12/bits/stl_iterator.h \
- /usr/include/c++/12/ext/type_traits.h \
  /usr/include/c++/12/bits/stl_function.h \
  /usr/include/c++/12/backward/binders.h \
- /usr/include/c++/12/ext/numeric_traits.h \
- /usr/include/c++/12/bits/stl_algobase.h \
- /usr/include/c++/12/bits/stl_pair.h /usr/include/c++/12/bits/utility.h \
- /usr/include/c++/12/debug/debug.h \
- /usr/include/c++/12/bits/predefined_ops.h \
  /usr/include/c++/12/bits/refwrap.h /usr/include/c++/12/bits/invoke.h \
  /usr/include/c++/12/bits/range_access.h \
  /usr/include/c++/12/initializer_list \
@@ -76,23 +109,7 @@ examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: \
  /usr/include/c++/12/bits/ranges_base.h \
  /usr/include/c++/12/bits/max_size_type.h /usr/include/c++/12/numbers \
  /usr/include/c++/12/bits/string_view.tcc \
- /usr/include/c++/12/ext/string_conversions.h /usr/include/c++/12/cstdlib \
- /usr/include/stdlib.h /usr/include/bits/waitflags.h \
- /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
- /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \
- /usr/include/bits/types/time_t.h /usr/include/bits/types/timer_t.h \
- /usr/include/endian.h /usr/include/bits/byteswap.h \
- /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
- /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
- /usr/include/bits/types/__sigset_t.h \
- /usr/include/bits/types/struct_timeval.h \
- /usr/include/bits/types/struct_timespec.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
- /usr/include/bits/pthreadtypes-arch.h \
- /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
- /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
- /usr/include/c++/12/bits/std_abs.h /usr/include/c++/12/cstdio \
+ /usr/include/c++/12/ext/string_conversions.h /usr/include/c++/12/cstdio \
  /usr/include/stdio.h /usr/include/bits/types/__fpos_t.h \
  /usr/include/bits/types/__fpos64_t.h \
  /usr/include/bits/types/struct_FILE.h \
@@ -104,6 +121,20 @@ examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: \
  /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
  /usr/include/c++/12/bits/basic_string.tcc \
+ /usr/include/c++/12/bits/random.h /usr/include/c++/12/vector \
+ /usr/include/c++/12/bits/stl_uninitialized.h \
+ /usr/include/c++/12/bits/stl_vector.h \
+ /usr/include/c++/12/bits/stl_bvector.h \
+ /usr/include/c++/12/bits/vector.tcc \
+ /usr/include/c++/12/bits/uniform_int_dist.h \
+ /usr/include/c++/12/x86_64-suse-linux/bits/opt_random.h \
+ /usr/include/c++/12/bits/random.tcc /usr/include/c++/12/numeric \
+ /usr/include/c++/12/bits/stl_numeric.h /usr/include/c++/12/bit \
+ /usr/include/c++/12/pstl/glue_numeric_defs.h \
+ /usr/include/c++/12/pstl/execution_defs.h \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGL.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcg.hpp \
+ /home/maracaja/Programacao/CG/Atividade4/abcg/abcgApplication.hpp \
  /home/maracaja/Programacao/CG/Atividade4/abcg/abcgException.hpp \
  /usr/include/c++/12/stdexcept /usr/include/c++/12/exception \
  /usr/include/c++/12/bits/exception_ptr.h \
@@ -115,25 +146,7 @@ examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
  /usr/include/SDL2/close_code.h /usr/include/c++/12/stdlib.h \
  /usr/include/string.h /usr/include/strings.h /usr/include/inttypes.h \
- /usr/include/c++/12/math.h /usr/include/c++/12/cmath /usr/include/math.h \
- /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
- /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
- /usr/include/bits/fp-fast.h \
- /usr/include/bits/mathcalls-helper-functions.h \
- /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
- /usr/include/bits/iscanonical.h /usr/include/c++/12/bits/specfun.h \
- /usr/include/c++/12/limits /usr/include/c++/12/tr1/gamma.tcc \
- /usr/include/c++/12/tr1/special_function_util.h \
- /usr/include/c++/12/tr1/bessel_function.tcc \
- /usr/include/c++/12/tr1/beta_function.tcc \
- /usr/include/c++/12/tr1/ell_integral.tcc \
- /usr/include/c++/12/tr1/exp_integral.tcc \
- /usr/include/c++/12/tr1/hypergeometric.tcc \
- /usr/include/c++/12/tr1/legendre_function.tcc \
- /usr/include/c++/12/tr1/modified_bessel_func.tcc \
- /usr/include/c++/12/tr1/poly_hermite.tcc \
- /usr/include/c++/12/tr1/poly_laguerre.tcc \
- /usr/include/c++/12/tr1/riemann_zeta.tcc \
+ /usr/include/c++/12/math.h \
  /usr/lib64/gcc/x86_64-suse-linux/12/include/float.h \
  /usr/include/SDL2/SDL_assert.h /usr/include/SDL2/SDL_atomic.h \
  /usr/include/SDL2/SDL_audio.h /usr/include/SDL2/SDL_error.h \
@@ -257,16 +270,11 @@ examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: \
  /usr/include/c++/12/bits/enable_special_members.h \
  /usr/include/c++/12/bits/node_handle.h \
  /usr/include/c++/12/bits/unordered_map.h \
- /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/vector \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/array \
+ /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/array \
  /usr/include/c++/12/bits/stl_algo.h \
  /usr/include/c++/12/bits/algorithmfwd.h \
  /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_tempbuf.h \
- /usr/include/c++/12/bits/uniform_int_dist.h /usr/include/c++/12/variant \
+ /usr/include/c++/12/bits/stl_tempbuf.h /usr/include/c++/12/variant \
  /usr/include/c++/12/bits/parse_numbers.h \
  /home/maracaja/Programacao/CG/Atividade4/abcg/external/cppitertools/internal/iterbase.hpp \
  /usr/include/c++/12/cstddef /usr/include/c++/12/iterator \
@@ -298,11 +306,11 @@ examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: \
  /usr/include/c++/12/bits/ranges_algobase.h \
  /usr/include/c++/12/bits/ranges_util.h \
  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
- /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/memory \
+ /usr/include/c++/12/memory \
  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
- /usr/include/c++/12/bits/align.h /usr/include/c++/12/bit \
- /usr/include/c++/12/bits/unique_ptr.h /usr/include/c++/12/ostream \
- /usr/include/c++/12/ios /usr/include/c++/12/bits/basic_ios.h \
+ /usr/include/c++/12/bits/align.h /usr/include/c++/12/bits/unique_ptr.h \
+ /usr/include/c++/12/ostream /usr/include/c++/12/ios \
+ /usr/include/c++/12/bits/basic_ios.h \
  /usr/include/c++/12/bits/locale_facets.h /usr/include/c++/12/cwctype \
  /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
  /usr/include/c++/12/x86_64-suse-linux/bits/ctype_base.h \
@@ -575,8 +583,6 @@ examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: \
  /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/gsl_byte \
  /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/gsl_util \
  /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/multi_span \
- /usr/include/c++/12/numeric /usr/include/c++/12/bits/stl_numeric.h \
- /usr/include/c++/12/pstl/glue_numeric_defs.h \
  /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/pointers \
  /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/string_span \
  /home/maracaja/Programacao/CG/Atividade4/abcg/external/gsl/span_ext \
@@ -603,7 +609,4 @@ examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: \
  /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGLWindow.hpp \
  /home/maracaja/Programacao/CG/Atividade4/abcg/abcgOpenGLFunction.hpp \
  /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/camera.hpp \
- /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/chao.hpp \
- /usr/include/c++/12/random /usr/include/c++/12/bits/random.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/opt_random.h \
- /usr/include/c++/12/bits/random.tcc
+ /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/chao.hpp

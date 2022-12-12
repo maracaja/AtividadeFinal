@@ -23,7 +23,6 @@ void Camera::dolly(float speed)
         eye = futuro;
         at += forward * speed;
     }
-    travaCamera();
     computeViewMatrix();
 }
 
@@ -37,7 +36,6 @@ void Camera::truck(float speed)
         eye = futuro;
         at -= left * speed;
     }
-    travaCamera();
     computeViewMatrix();
 }
 
@@ -47,24 +45,11 @@ void Camera::pan(float speed)
     transform = translate(transform, eye);
     transform = rotate(transform, -speed, up);
     transform = translate(transform, -eye);
-
     at = transform * vec4(at, 1.0f);
-    travaCamera();
     computeViewMatrix();
 }
 
-// Impede que a câmera ultrapasse certos limites
-void Camera::travaCamera()
-{
-    if (eye.x > 5.0f) eye.x = 5.0f;
-    else if (eye.x < -5.0f) eye.x = -5.0f; 
-    if (eye.y > 10.0f) eye.y = 10.0f;
-    else if (eye.y < 0.0f) eye.y = 0.0f;
-    if (eye.z > 5.0f) eye.z = 5.0f;
-    else if (eye.z < -5.0f) eye.z = -5.0f;
-}
-
-// Verifica se a câmera alcançou os limites, visando impedir as outras movimentações
+// Verifica se a câmera alcançou os limites, visando impedir movimentações para muito longe
 bool Camera::extremo(vec3 cam)
 {
     return abs(cam.x) >= 5.0f || abs(cam.z) >= 5.0f || cam.y <= 0.0f || cam.y >= 10.0f;

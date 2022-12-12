@@ -1,64 +1,66 @@
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
 
+#include <random>
 #include "abcgOpenGL.hpp"
 #include "camera.hpp"
 #include "chao.hpp"
-#include <random>
 
 #define N_PREDIOS 100
 
 using namespace std;
 using namespace glm;
 
-class Window : public abcg::OpenGLWindow {
-protected:
-  void onEvent(SDL_Event const &event) override;
-  void onCreate() override;
-  void onPaint() override;
-  void onPaintUI() override;
-  void onResize(ivec2 const &size) override;
-  void onDestroy() override;
-  void onUpdate() override;
+struct Vertex 
+{
+    vec3 position;
+    friend bool operator==(Vertex const &, Vertex const &) = default;
+};
 
-private:
-  ivec2 tamanhoTela{};
+class Window : public abcg::OpenGLWindow 
+{
+    protected:
+        void onEvent(SDL_Event const &event) override;
+        void onCreate() override;
+        void onPaint() override;
+        void onPaintUI() override;
+        void onResize(ivec2 const &size) override;
+        void onDestroy() override;
+        void onUpdate() override;
 
-  GLuint VAO{};
-  GLuint VBO{};
-  GLuint EBO{};
-  GLuint prog{};
+    private:
+        ivec2 tamanhoTela{};
 
-  GLint viewLoc{};
-  GLint projLoc{};
-  GLint modelLoc{};
-  GLint colorLoc{};
+        GLuint VAO{};
+        GLuint VBO{};
+        GLuint EBO{};
 
-  Camera camera;
-  float dollySpeed{};
-  float truckSpeed{};
-  float panSpeed{};
+        vector<char const *> nomes{"lookat", "chao"};
+        vector<GLuint> programs;
+        int current{};
 
-  Chao chao;
-  vector<Vertex> vertices;
-  vector<GLuint> indices;
+        GLint viewLoc{};
+        GLint projLoc{};
+        GLint modelLoc{};
+        GLint colorLoc{};
 
-  // Light and material properties
-  glm::vec4 m_lightDir{1.0f, 1.0f, 1.0f, 0.0f};
-  glm::vec4 m_Ia{1.0f};
-  glm::vec4 m_Id{1.0f};
-  glm::vec4 m_Is{1.0f};
-  glm::vec4 m_Ka{0.1f, 0.1f, 0.1f, 1.0f};
-  glm::vec4 m_Kd{0.7f, 0.7f, 0.7f, 1.0f};
-  glm::vec4 m_Ks{1.0f};
-  float m_shininess{25.0f};
+        Camera camera;
+        float dollySpeed{};
+        float truckSpeed{};
+        float panSpeed{};
 
-  default_random_engine r;
-  vector<vec3> cores;
-  vector<vec3> escalas;
-  vector<vec3> centros;
+        Chao chao;
+        vector<Vertex> vertices;
+        vector<GLuint> indices;
 
-  void loadModelFromFile(string_view path);
+        default_random_engine r;
+        vector<vec3> cores;
+        vector<vec3> escalas;
+        vector<vec3> centros;
+
+        vec4 Kd{};
+
+        void loadModelFromFile(string_view path);
 };
 
 #endif
