@@ -48,7 +48,7 @@ Segue abaixo a descrição do código-fonte, contido na pasta do projeto como ma
 -   Em `examples/CMakeLists.txt`, há apenas a linha de código `add_subdirectory(atividade4)`;
 -   Em `public`, além dos arquivos gerados pela compilação do WASM, a página `helloworld.html` foi modificada a linha 258 para que a página execute o arquivo `atividade4.js`;
 -   A pasta `docs` foi criada com os arquivos compilados pelo `build-wasm` e o `helloworld.html`, visando a criação do site no GitHub Pages;
--   Na pasta `atividade3`:
+-   Na pasta `atividade4`:
     -   Em `CMakeLists.txt`, foi definido o nome do projeto na linha 1. Na linha seguinte estão listados os arquivos `.cpp` utilizados;
     -   Em `assets`, além dos shaders, é incluído o arquivo `box.obj` das notas de aula, modificado de forma a deixar suas coordenadas de origem sob sua face inferior.
 
