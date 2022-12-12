@@ -1,50 +1,34 @@
 abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o: \
- /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imgui_impl_opengl3.cpp \
- /usr/include/stdc-predef.h \
- /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imgui.h \
- /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imconfig.h \
- /usr/lib64/gcc/x86_64-suse-linux/12/include/float.h \
- /usr/lib64/gcc/x86_64-suse-linux/12/include/stdarg.h \
- /usr/lib64/gcc/x86_64-suse-linux/12/include/stddef.h \
- /usr/include/string.h /usr/include/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
- /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/strings.h /usr/include/assert.h \
- /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imgui_impl_opengl3.h \
- /usr/include/stdio.h /usr/include/bits/types.h \
- /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
- /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
- /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h /usr/include/bits/stdio.h \
- /usr/lib64/gcc/x86_64-suse-linux/12/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h \
- /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imgui_impl_opengl3_loader.h \
- /usr/include/c++/12/stdlib.h /usr/include/c++/12/cstdlib \
- /usr/include/c++/12/x86_64-suse-linux/bits/c++config.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/os_defines.h \
- /usr/include/c++/12/x86_64-suse-linux/bits/cpu_defines.h \
- /usr/include/c++/12/pstl/pstl_config.h /usr/include/stdlib.h \
- /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
- /usr/include/sys/types.h /usr/include/bits/types/clock_t.h \
- /usr/include/bits/types/clockid_t.h /usr/include/bits/types/time_t.h \
- /usr/include/bits/types/timer_t.h /usr/include/endian.h \
- /usr/include/bits/endian.h /usr/include/bits/endianness.h \
- /usr/include/bits/byteswap.h /usr/include/bits/uintn-identity.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/types/sigset_t.h /usr/include/bits/types/__sigset_t.h \
- /usr/include/bits/types/struct_timeval.h \
- /usr/include/bits/types/struct_timespec.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
- /usr/include/bits/pthreadtypes-arch.h \
- /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
- /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
- /usr/include/c++/12/bits/std_abs.h /usr/include/dlfcn.h \
- /usr/include/bits/dlfcn.h /usr/include/bits/dl_find_object.h
+  /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imgui_impl_opengl3.cpp \
+  /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imgui.h \
+  /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imconfig.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/float.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config_site \
+  /home/maracaja/bin/emsdk/upstream/lib/clang/16.0.0/include/float.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/float.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdarg.h \
+  /home/maracaja/bin/emsdk/upstream/lib/clang/16.0.0/include/stdarg.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stddef.h \
+  /home/maracaja/bin/emsdk/upstream/lib/clang/16.0.0/include/stddef.h \
+  /home/maracaja/bin/emsdk/upstream/lib/clang/16.0.0/include/__stddef_max_align_t.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__nullptr \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/string.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/string.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/strings.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
+  /home/maracaja/Programacao/CG/Atividade4/abcg/external/imgui/imgui_impl_opengl3.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdio.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/stdio.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdint.h \
+  /home/maracaja/bin/emsdk/upstream/lib/clang/16.0.0/include/stdint.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2platform.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/KHR/khrplatform.h \
+  /home/maracaja/bin/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2ext.h

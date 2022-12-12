@@ -1,4 +1,4 @@
-# Atividade 3
+# Atividade 4
 #### Sérgio Maracajá Junior - RA 11000315
 #### Vinícius Lacerda Gonsalez - RA 11126315
 
@@ -6,8 +6,8 @@
 
 ## Sobre a aplicação
 
-A presente aplicação apresenta um modelo simplificado de uma vista aérea de uma cidade, usando transformações de câmera baseadas no *LookAt* para navegar na visualização e paralelepípedos de diferentes dimensões baseados em um mesmo modelo simulando prédios.
-O terreno onde estes edifícios simulados estão situados tem uma dimensão de 10 x 10 com centro na origem do sistema de coordenadas. Caso a câmera alcance um limite consistente em um cubo de lado 10 partindo da referência do solo, a aplicação não responderá até que seja inserido um comando que devolva a câmera para uma posição válida. A intenção neste caso foi evitar deslocamentos a distâncias que tendam ao infinito.
+A presente aplicação trata-se de uma atualização da Atividade 3, que apresenta um modelo simplificado de uma vista aérea de uma cidade, usando transformações de câmera baseadas no *LookAt* para navegar na visualização e paralelepípedos de diferentes dimensões baseados em um mesmo modelo simulando prédios. Os problemas de navegação apresentados na entrega anterior foram corrigidos e as distorções apresentadas anteriormente foram completamente sanadas.
+O terreno onde estes edifícios simulados estão situados tem uma dimensão de 20 x 20 com centro na origem do sistema de coordenadas. Caso a câmera alcance um limite consistente com essas dimensões terrestres e altura 10 partindo da referência do solo, a aplicação não responderá até que seja inserido um comando que devolva a câmera para uma posição válida. A intenção neste caso foi evitar deslocamentos a distâncias que tendam ao infinito.
 
 Para a utilização da navegação, temos os seguintes comandos:
 -   **Seta para cima:** aumenta o zoom;
@@ -17,19 +17,27 @@ Para a utilização da navegação, temos os seguintes comandos:
 -   **Tecla 'A':** desloca-se lateralmente para a esquerda;
 -   **Tecla 'D':** desloca-se lateralmente para a direita.
 
+### Problemas
+
+Apesar de diversas tentativas, não conseguimos aplicar de forma satisfatória os efeitos de iluminação e texturização propostos. Assumimos que apenas a interatividade, iniciada na entrega anterior, corresponde aos requisitos desta entrega. Preferimos manter uma versão final que fosse funcional e sem efeitos estranhos em vez de submeter uma tentativa (que muitas vezes, sequer rodou) ou mudar o projeto de última hora, o que muito provavelmente terminaria em um resultado insatisfatório.
+Algumas questões, que envolveram a aplicação das texturas e luzes aos diversos objetos criados na aplicação, não foram bem entendidas. Quando muito, chegou-se a uma iluminação que refletiu apenas no solo (!) enquanto os prédios perdiam completamente a cor. As tentativas de apresentar uma textura, quando muito, simplesmente não apareceram ou resultavam em toda uma série de *crashes* cujas origens foram impossíveis de detectar.
+
 * * *
 
 ## Shaders
 
 ### lookat.frag
 
-Este shader realiza apenas uma operação importante: se a câmera em algum momento atravessar algumas estrutura, esta aparecerá mais escura, com metade da intensidade, permanecendo com a cor normal em qualquer outro caso (linhas 11 e 12).
+Este shader realiza apenas uma operação importante: se a câmera em algum momento atravessar alguma estrutura, esta aparecerá mais escura, com metade da intensidade, permanecendo com a cor normal em qualquer outro caso (linhas 11 e 12).
 
 
 ### lookat.vert
 
-Aqui, no `main` (linhas 12-18), a posição da câmera no cenário é refeita após a atualização dos valores de `model`, `view` e `posicao`, bem como esta posição calculada influencia na perda de intensidade (calculada se essa diferença vai até 10 unidades de distância), gerando um efeito de escurecimento gradual até uma perspectiva similar a uma sombra no horizonte, antes do desaparecimento.
+Aqui, no `main` (linhas 12-18), a posição da câmera no cenário é refeita após a atualização dos valores de `model`, `view` e `posicao`, bem como esta posição calculada influencia na perda de intensidade (calculada se essa diferença vai até 20 unidades de distância), gerando um efeito de escurecimento gradual até uma perspectiva similar a uma sombra no horizonte, antes do desaparecimento.
 
+### chao.vert e chao.frag
+
+Buscou-se aqui, como uma última tentativa, realizar ao menos o mapeamento planar do recurso `asfalto.png` ao chão, mas o mesmo nem mesmo foi exibido nas versões que chegavam a ser executadas. Era pretendido repetir a textura de asfalto criada em atividade passada (<https://github.com/maracaja/Carros>), mas não ficou claro se isso era realmente possível. Em certo momento, chegou-se a "chuviscar" toda a tela, mas a ideia acabou também abandonada.
 
 * * *
 
@@ -37,8 +45,8 @@ Aqui, no `main` (linhas 12-18), a posição da câmera no cenário é refeita ap
 
 Segue abaixo a descrição do código-fonte, contido na pasta do projeto como mais um exemplo na pasta `examples`, sob o título `atividade1`. Além dos arquivos C++ que serão descritos mais adiante, foram realizadas as seguintes adições ao projeto:
 
--   Em `examples/CMakeLists.txt`, há apenas a linha de código `add_subdirectory(atividade3)`;
--   Em `public`, além dos arquivos gerados pela compilação do WASM, a página `helloworld.html` foi modificada a linha 258 para que a página execute o arquivo `atividade3.js`;
+-   Em `examples/CMakeLists.txt`, há apenas a linha de código `add_subdirectory(atividade4)`;
+-   Em `public`, além dos arquivos gerados pela compilação do WASM, a página `helloworld.html` foi modificada a linha 258 para que a página execute o arquivo `atividade4.js`;
 -   A pasta `docs` foi criada com os arquivos compilados pelo `build-wasm` e o `helloworld.html`, visando a criação do site no GitHub Pages;
 -   Na pasta `atividade3`:
     -   Em `CMakeLists.txt`, foi definido o nome do projeto na linha 1. Na linha seguinte estão listados os arquivos `.cpp` utilizados;
@@ -76,31 +84,27 @@ Neste método, são eliminadas as estruturas VAO e VBO, com uso dos métodos ded
 
 ### camera.hpp
 
-A aplicação da câmera acabou por ser uma adaptação do LookAt, uma vez que algumas tentativas de implementar o *trackball* ou deixar as movimentações automáticas tiveram resultados insatisfatórios. Assim, uma adaptação ao código original do lookAt é apresentada, com complementos que impedem que a câmera exceda limites de distância, sempre estando sobre o terreno delimitado pela classe `Chao`.
+A aplicação da câmera se tratou de uma variação do lookAt, com complementos que impedem que a câmera exceda limites de distância, sempre estando sobre o terreno delimitado pela classe `Chao`.
 -   Assim como no original, são declarados nas linhas 12 a 16 os métodos públicos que comandam a movimentação e os cálculos de matrizes de transformações. Os retornos dessas matrizes (declaradas de forma privada nas linhas 26 e 27) são apresentados pelos métodos presentes nas linhas 18 e 19;
--   A câmera, localizada pela variável `eye` (linha 22), inicia com altura 2.5, valor compatível com a altura máxima configurada para um edifício. Também a posição apresenta-se deslocada à metade da distância máxima em relação à origem, também em 2.5, mas no eixo z;
--   O ponto de visualização `at` é configurada como metade da altura inicial da câmera (1.25), o que proporciona uma visualização vista com uma componente "para baixo", tal como seria em uma vista aérea como a de um drone ou helicóptero;
--   São declarados dois métodos privados nas linhas 29 e 30: `travaCamera()` impede o deslocamento da câmera para além dos limites do terreno; `extremo()` testa se a câmera já alcançou algum desses limites.
+-   A câmera, localizada pela variável `eye` (linha 22), inicia com altura 3.0, valor pouco acima da altura máxima configurada para um edifício. Também a posição apresenta-se deslocada a um quarto da distância máxima em relação à origem, em -2.5 no eixo z;
+-   O ponto de visualização `at` é configurada como metade da altura máxima de um prédio (1.25), o que proporciona uma visualização vista com uma componente "para baixo", tal como seria em uma vista aérea como a de um drone ou helicóptero;
+-   Na linha 29, é declarado o método privado `extremo()` testa se a câmera já alcançou algum dos limites para a visualização: as configurações do chão estabelecidas anteriormente definem que as coordenadas de x e z devem manter-se entre -10 e 10. Já para a altura, definiu-se uma altura máxima 10 enquando a coordenada mínima para y é rente ao chão, ou seja, 0.
 
 
 ### camera.cpp
 
-Utilizando o princípio do LookAt que, com o novo ângulo de observação, converte o deslocamento para frente e para trás em um *zoom*, na prática. A distância da perspectiva foi configurada em 10.0 (linha 9), permitindo uma visualização praticamente integral dos elementos em todas as posições, exceto nos pontos mais próximos aos extremos das diagonais.
-Temos a adição aos métodos originais dos métodos privados listados abaixo, que impedem o movimento da câmera para uma distância exagerada:
+Utilizando o princípio do LookAt que, com o novo ângulo de observação, converte o deslocamento para frente e para trás em um *zoom*, na prática. A distância da perspectiva foi configurada em 28.3 (linha 9), aproximadamente 10√2, permitindo uma visualização integral dos elementos em todas as posições.
+Temos a adição aos métodos originais do método privado abaixo, que impede o movimento da câmera para uma distância exagerada:
 
-#### travaCamera – linhas 49 a 57
+#### extremo – linhas 53 a 56
 
-Aqui, é testado se as coordenadas de superfície não ultrapassam as coordenadas do chão estabelecidas anteriormente. Logo, devem manter-se entre -5 e 5. Já para a altura, os limites têm a mesma dimensão, mas partem do 0 (altura do solo) à altura máxima 10, formando um cubo de posições viáveis.
-Este método é invocado antes de `computeViewMatrix` nos métodos `dolly`, `truck` e `pan`, impedindo que a visualização da câmera se afaste demais no resultado final.
-
-#### extremo – linhas 60 a 63
-
-Este método verifica se a câmera atingiu uma das situações extremas listadas no método `travaCamera` após um dos cálculos realizados, impedindo que algum movimento impróprio ocorra nestas posições. Ele é uma condição que limita o cálculo de `at` nos casos em que os deslocamentos de `dolly` ou `truck` são acionados. `pan` não se encaixa neste caso pois é uma rotação simples.
+Este método verifica se a câmera atingiu uma das situações extremas listadas no método `travaCamera` após um dos cálculos realizados, impedindo que algum movimento impróprio ocorra nestas posições. Ele estabelece uma condição que limita os cálculos de `at` e `eye` nos casos em que os deslocamentos de `dolly` ou `truck` são acionados e gerariam uma posição de `eye` futura que saísse do espaço delimitado , enquanto comandos que levem a posição da câmera para uma posicao válida não são bloqueados. Eventuais distorções nas bordas do terreno também não ocorrem mais devido à correta aplicação deste método dentro de `dolly` e `truck`.
+O método `pan` não foi afetado neste caso pois é uma rotação simples.
 
 
 ### window.hpp
 
-Este arquivo de cabeçalho reúne todos as variáveis e métodos que centralizam as funcionalidades da aplicação. Logo na linha 9, é definido um total de 100 "prédios" no cenário.
+Este arquivo de cabeçalho reúne todos as variáveis e métodos que centralizam as funcionalidades da aplicação. Logo na linha 9, é definido um total de 500 "prédios" no cenário.
 -   Entre as linhas 14 a 18, é definida a mesma `struct Vertex` definida nas notas de aula;
 -   Na sequência, é definida a classe `Window` (linhas 20 a 59):
     -   Entre as linhas 23 e 29, são criados os métodos da classe `abcg::OpenGLWindow` que são sobrescritos – e detalhados na seção de `window.cpp`;
@@ -127,7 +131,7 @@ O código deste método inicia-se carregando o endereço lógico da pasta `asset
 -   Quatro distribuições uniformes são inicializadas (linhas 19 a 22):
     -   `distSup` define os valores das escalas de largura e comprimento dos edifícios, delimitado entre 25% e 75% da medida original do modelo;
     -   `distAlt` define os valores possíveis da escala de altura dos edifícios, entre 0,5x e 2,5x a altura do modelo original;
-    -   `distPos` define os valores de coordenadas no terreno entre -4 e +4 em ambas as direções. Com o limite de tamanho em superfície, é garantido que todos os elementos estarão dispostos sobre o quadrado de coordenadas -5 a +5 em ambas as direções;
+    -   `distPos` define os valores de coordenadas no terreno entre -9 e +9 em ambas as direções. Com o limite de tamanho em superfície, é garantido que todos os elementos estarão dispostos sobre o quadrado de coordenadas -10 a +10 em ambas as direções;
     -   `distCor` define os canais RGB como sendo pelo menos 70% do valor máximo, gerando cores claras, visando atrasar o escurecimento gradual com a distância.
 -   Os dados dos prédios são armazenados nos vetores carregando os valores aleatórios (laço `for` das linhas 25 a 30);
 -   O fundo da aplicação é configurado como sendo cinza 20% (linha 32);

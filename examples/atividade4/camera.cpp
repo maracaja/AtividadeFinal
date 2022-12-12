@@ -6,7 +6,7 @@ void Camera::computeProjectionMatrix(vec2 const &size)
 {
     proj = mat4(1.0f);
     auto const aspect{size.x / size.y};
-    proj = perspective(radians(70.0f), aspect, 0.1f, 10.0f);
+    proj = perspective(radians(70.0f), aspect, 0.1f, 28.3f);
 }
 
 void Camera::computeViewMatrix() 
@@ -52,5 +52,5 @@ void Camera::pan(float speed)
 // Verifica se a câmera alcançou os limites, visando impedir movimentações para muito longe
 bool Camera::extremo(vec3 cam)
 {
-    return abs(cam.x) >= 5.0f || abs(cam.z) >= 5.0f || cam.y <= 0.0f || cam.y >= 10.0f;
+    return abs(cam.x) >= 10.0f || abs(cam.z) >= 10.0f || cam.y <= 0.0f || cam.y >= 10.0f;
 }

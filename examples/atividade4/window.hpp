@@ -6,7 +6,7 @@
 #include "camera.hpp"
 #include "chao.hpp"
 
-#define N_PREDIOS 100
+#define N_PREDIOS 500
 
 using namespace std;
 using namespace glm;
@@ -34,10 +34,7 @@ class Window : public abcg::OpenGLWindow
         GLuint VAO{};
         GLuint VBO{};
         GLuint EBO{};
-
-        vector<char const *> nomes{"lookat", "chao"};
-        vector<GLuint> programs;
-        int current{};
+        GLuint prog{};
 
         GLint viewLoc{};
         GLint projLoc{};
@@ -57,8 +54,6 @@ class Window : public abcg::OpenGLWindow
         vector<vec3> cores;
         vector<vec3> escalas;
         vector<vec3> centros;
-
-        vec4 Kd{};
 
         void loadModelFromFile(string_view path);
 };

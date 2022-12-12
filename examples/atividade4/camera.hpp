@@ -19,14 +19,13 @@ class Camera
         mat4 const &getProjMatrix() const { return proj; }
 
     private:
-        vec3 eye{0.0f, 2.5f, 2.5f}; // Posição de partida da câmera
-        vec3 at{0.0f, 1.25f, 0.0f}; // Ponto de partida na metade da altura máxima
+        vec3 eye{0.0f, 3.0f, 2.5f}; // Posição de partida da câmera
+        vec3 at{0.0f, 1.25f, 0.0f}; // Alvo de visualização na metade da altura máxima
         vec3 up{0.0f, 1.0f, 0.0f};
 
         mat4 view;
         mat4 proj;
-
-        void travaCamera();
+        
         bool extremo(vec3 cam);
 };
 

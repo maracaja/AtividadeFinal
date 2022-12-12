@@ -1,16 +1,16 @@
 #include "chao.hpp"
-#include <filesystem>
 
+using namespace std;
 using namespace glm;
 
 void Chao::create(GLuint prog)
 {
     array<vec3, 4> vertices 
-    {{  // Solo do cenário em um quadrado 10 x 10 com centro na origem
-        {-5.0f, 0.0f, 5.0f},
-        {-5.0f, 0.0f, -5.0f},
-        {5.0f, 0.0f, 5.0f},
-        {5.0f, 0.0f, -5.0f}
+    {{  // Solo do cenário em um quadrado 20 x 20 com centro na origem
+        {-10.0f, 0.0f, 10.0f},
+        {-10.0f, 0.0f, -10.0f},
+        {10.0f, 0.0f, 10.0f},
+        {10.0f, 0.0f, -10.0f}
     }};
 
     // Criação do VBO
@@ -38,18 +38,9 @@ void Chao::create(GLuint prog)
 void Chao::paint() 
 {
     abcg::glBindVertexArray(VAO);
-
     mat4 matrizModel{1.0f};
     abcg::glUniformMatrix4fv(model, 1, GL_FALSE, &matrizModel[0][0]);
     abcg::glUniform4f(cor, 0.3f, 0.3f, 0.3f, 1.0f);
-
-    abcg::glActiveTexture(GL_TEXTURE0);
-    abcg::glBindTexture(GL_TEXTURE_2D, textura);
-    abcg::glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    abcg::glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    abcg::glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    abcg::glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-
     abcg::glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     abcg::glBindVertexArray(0);
 }
@@ -58,11 +49,4 @@ void Chao::destroy()
 {
     abcg::glDeleteBuffers(1, &VBO);
     abcg::glDeleteVertexArrays(1, &VAO);
-}
-
-void Chao::loadTexture(string_view path)
-{
-    if (!filesystem::exists(path)) return;
-    abcg::glDeleteTextures(1, &textura);
-    textura = abcg::loadOpenGLTexture({.path = path});
 }

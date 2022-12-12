@@ -18,7 +18,7 @@ void Window::onCreate()
     r.seed(chrono::steady_clock::now().time_since_epoch().count()); // Gerador de números pseudo-aleatórios
     uniform_real_distribution distSup(0.25f, 0.75f); // Valores de largura e comprimento dos prédios
     uniform_real_distribution distAlt(0.5f, 2.5f); // Valores de altura dos prédios
-    uniform_real_distribution distPos(-4.0f, 4.0f); // Valores de posicionamento dos prédios
+    uniform_real_distribution distPos(-9.0f, 9.0f); // Valores de posicionamento dos prédios
     uniform_real_distribution distCor(0.7f, 1.0f); // Valores dos canais RGB das cores dos prédios
 
     // Criação dos dados dos prédios
@@ -32,17 +32,19 @@ void Window::onCreate()
     abcg::glClearColor(0.2f, 0.2f, 0.2f, 1.0f); // Cor padrão do fundo (cinza escuro)
     abcg::glEnable(GL_DEPTH_TEST);
 
-    for (auto const &nome : nomes)
-    {
-        auto const path{assetsPath + nome};
-        auto const prog{abcg::createOpenGLProgram
-        ({
-            {.source = path + ".vert", .stage = abcg::ShaderStage::Vertex},
-            {.source = path + ".frag", .stage = abcg::ShaderStage::Fragment}
-        })};
-        programs.push_back(prog);
-    }
+    prog = abcg::createOpenGLProgram
+    ({
+        {.source = assetsPath + "lookat.vert", .stage = abcg::ShaderStage::Vertex},
+        {.source = assetsPath + "lookat.frag", .stage = abcg::ShaderStage::Fragment}
+    });
   
+    // Localização das variáveis uniformes
+    viewLoc = abcg::glGetUniformLocation(prog, "view");
+    projLoc = abcg::glGetUniformLocation(prog, "proj");
+    modelLoc = abcg::glGetUniformLocation(prog, "model");
+    colorLoc = abcg::glGetUniformLocation(prog, "cor");
+
+    chao.create(prog); // Cria o chão do cenário
     loadModelFromFile(assetsPath + "box.obj"); // Carrega modelo box.obj
 
     // Criação do VBO
@@ -61,7 +63,12 @@ void Window::onCreate()
     abcg::glGenVertexArrays(1, &VAO);
     abcg::glBindVertexArray(VAO);
 
-    
+    abcg::glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    auto const posicao{abcg::glGetAttribLocation(prog, "posicao")};
+    abcg::glEnableVertexAttribArray(posicao);
+    abcg::glVertexAttribPointer(posicao, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), nullptr);
+    abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
+    abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
 
     abcg::glBindVertexArray(0);
 }
@@ -70,23 +77,10 @@ void Window::onPaint()
 {
     abcg::glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     abcg::glViewport(0, 0, tamanhoTela.x, tamanhoTela.y);
-    auto const prog{programs.at(current)};
     abcg::glUseProgram(prog);
-
-    // Localização das variáveis uniformes
-    viewLoc = abcg::glGetUniformLocation(prog, "view");
-    projLoc = abcg::glGetUniformLocation(prog, "proj");
-    modelLoc = abcg::glGetUniformLocation(prog, "model");
-    colorLoc = abcg::glGetUniformLocation(prog, "cor");
-    auto const KdLoc{abcg::glGetUniformLocation(prog, "Kd")};
-    auto const diffuseTexLoc{abcg::glGetUniformLocation(prog, "diffuseTex")};
-
-    chao.create(prog); // Cria o chão do cenário
 
     abcg::glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &camera.getViewMatrix()[0][0]);
     abcg::glUniformMatrix4fv(projLoc, 1, GL_FALSE, &camera.getProjMatrix()[0][0]);
-    abcg::glUniform1i(diffuseTexLoc, 0);
-    abcg::glUniform4fv(KdLoc, 1, &Kd.x);
     abcg::glBindVertexArray(VAO);
 
     // Desenha os prédios
@@ -101,13 +95,6 @@ void Window::onPaint()
         abcg::glUniform4f(colorLoc, cores.at(i).x, cores.at(i).y, cores.at(i).z, 1.0f);
         abcg::glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, nullptr);
     }
-    
-    abcg::glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    auto const posicao{abcg::glGetAttribLocation(prog, "posicao")};
-    abcg::glEnableVertexAttribArray(posicao);
-    abcg::glVertexAttribPointer(posicao, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), nullptr);
-    abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
-    abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     
     abcg::glBindVertexArray(0);
     chao.paint(); // Desenha o chão
@@ -162,7 +149,7 @@ void Window::onEvent(SDL_Event const &event)
 void Window::onDestroy() 
 {
     chao.destroy();
-    for (auto const &prog : programs) abcg::glDeleteProgram(prog);
+    abcg::glDeleteProgram(prog);
     abcg::glDeleteBuffers(1, &EBO);
     abcg::glDeleteBuffers(1, &VBO);
     abcg::glDeleteVertexArrays(1, &VAO);
@@ -194,7 +181,7 @@ void Window::loadModelFromFile(string_view path)
 
             auto const index{shape.mesh.indices.at(offset)};
             auto const startIndex{3 * index.vertex_index};
-            auto const vx{attributes.vertices.at(startIndex + 0)};
+            auto const vx{attributes.vertices.at(startIndex)};
             auto const vy{attributes.vertices.at(startIndex + 1)};
             auto const vz{attributes.vertices.at(startIndex + 2)};
             Vertex const vertex{.position = {vx, vy, vz}};

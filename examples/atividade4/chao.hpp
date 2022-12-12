@@ -3,8 +3,6 @@
 
 #include "abcgOpenGL.hpp"
 
-using namespace std;
-
 class Chao 
 {
     public:
@@ -17,9 +15,6 @@ class Chao
         GLuint VBO{};
         GLint model{};
         GLint cor{};
-        GLuint textura{};
-
-        void loadTexture(string_view path);
 };
 
 #endif

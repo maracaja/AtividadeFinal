@@ -70,60 +70,64 @@ include examples/atividade4/CMakeFiles/atividade4.dir/progress.make
 include examples/atividade4/CMakeFiles/atividade4.dir/flags.make
 
 examples/atividade4/CMakeFiles/atividade4.dir/main.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/flags.make
+examples/atividade4/CMakeFiles/atividade4.dir/main.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/includes_CXX.rsp
 examples/atividade4/CMakeFiles/atividade4.dir/main.cpp.o: /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/main.cpp
 examples/atividade4/CMakeFiles/atividade4.dir/main.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/atividade4/CMakeFiles/atividade4.dir/main.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade4/CMakeFiles/atividade4.dir/main.cpp.o -MF CMakeFiles/atividade4.dir/main.cpp.o.d -o CMakeFiles/atividade4.dir/main.cpp.o -c /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/main.cpp
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade4/CMakeFiles/atividade4.dir/main.cpp.o -MF CMakeFiles/atividade4.dir/main.cpp.o.d -o CMakeFiles/atividade4.dir/main.cpp.o -c /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/main.cpp
 
 examples/atividade4/CMakeFiles/atividade4.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atividade4.dir/main.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/main.cpp > CMakeFiles/atividade4.dir/main.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/main.cpp > CMakeFiles/atividade4.dir/main.cpp.i
 
 examples/atividade4/CMakeFiles/atividade4.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atividade4.dir/main.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/main.cpp -o CMakeFiles/atividade4.dir/main.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/main.cpp -o CMakeFiles/atividade4.dir/main.cpp.s
 
 examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/flags.make
+examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/includes_CXX.rsp
 examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/window.cpp
 examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o -MF CMakeFiles/atividade4.dir/window.cpp.o.d -o CMakeFiles/atividade4.dir/window.cpp.o -c /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/window.cpp
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o -MF CMakeFiles/atividade4.dir/window.cpp.o.d -o CMakeFiles/atividade4.dir/window.cpp.o -c /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/window.cpp
 
 examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atividade4.dir/window.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/window.cpp > CMakeFiles/atividade4.dir/window.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/window.cpp > CMakeFiles/atividade4.dir/window.cpp.i
 
 examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atividade4.dir/window.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/window.cpp -o CMakeFiles/atividade4.dir/window.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/window.cpp -o CMakeFiles/atividade4.dir/window.cpp.s
 
 examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/flags.make
+examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/includes_CXX.rsp
 examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.o: /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/chao.cpp
 examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.o -MF CMakeFiles/atividade4.dir/chao.cpp.o.d -o CMakeFiles/atividade4.dir/chao.cpp.o -c /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/chao.cpp
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.o -MF CMakeFiles/atividade4.dir/chao.cpp.o.d -o CMakeFiles/atividade4.dir/chao.cpp.o -c /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/chao.cpp
 
 examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atividade4.dir/chao.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/chao.cpp > CMakeFiles/atividade4.dir/chao.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/chao.cpp > CMakeFiles/atividade4.dir/chao.cpp.i
 
 examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atividade4.dir/chao.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/chao.cpp -o CMakeFiles/atividade4.dir/chao.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/chao.cpp -o CMakeFiles/atividade4.dir/chao.cpp.s
 
 examples/atividade4/CMakeFiles/atividade4.dir/camera.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/flags.make
+examples/atividade4/CMakeFiles/atividade4.dir/camera.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/includes_CXX.rsp
 examples/atividade4/CMakeFiles/atividade4.dir/camera.cpp.o: /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/camera.cpp
 examples/atividade4/CMakeFiles/atividade4.dir/camera.cpp.o: examples/atividade4/CMakeFiles/atividade4.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object examples/atividade4/CMakeFiles/atividade4.dir/camera.cpp.o"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/ccache /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade4/CMakeFiles/atividade4.dir/camera.cpp.o -MF CMakeFiles/atividade4.dir/camera.cpp.o.d -o CMakeFiles/atividade4.dir/camera.cpp.o -c /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/camera.cpp
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/ccache /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/atividade4/CMakeFiles/atividade4.dir/camera.cpp.o -MF CMakeFiles/atividade4.dir/camera.cpp.o.d -o CMakeFiles/atividade4.dir/camera.cpp.o -c /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/camera.cpp
 
 examples/atividade4/CMakeFiles/atividade4.dir/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atividade4.dir/camera.cpp.i"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/camera.cpp > CMakeFiles/atividade4.dir/camera.cpp.i
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/camera.cpp > CMakeFiles/atividade4.dir/camera.cpp.i
 
 examples/atividade4/CMakeFiles/atividade4.dir/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atividade4.dir/camera.cpp.s"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/camera.cpp -o CMakeFiles/atividade4.dir/camera.cpp.s
+	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /home/maracaja/bin/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/camera.cpp -o CMakeFiles/atividade4.dir/camera.cpp.s
 
 # Object files for target atividade4
 atividade4_OBJECTS = \
@@ -135,33 +139,22 @@ atividade4_OBJECTS = \
 # External object files for target atividade4
 atividade4_EXTERNAL_OBJECTS =
 
-bin/atividade4: examples/atividade4/CMakeFiles/atividade4.dir/main.cpp.o
-bin/atividade4: examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o
-bin/atividade4: examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.o
-bin/atividade4: examples/atividade4/CMakeFiles/atividade4.dir/camera.cpp.o
-bin/atividade4: examples/atividade4/CMakeFiles/atividade4.dir/build.make
-bin/atividade4: abcg/libabcg.a
-bin/atividade4: /usr/lib64/libGLX.so
-bin/atividade4: /usr/lib64/libOpenGL.so
-bin/atividade4: /usr/lib64/libGLEW.so
-bin/atividade4: abcg/external/fmt/libfmt.a
-bin/atividade4: abcg/external/imgui/libimgui.a
-bin/atividade4: /usr/lib64/libSDL2main.a
-bin/atividade4: /usr/lib64/libSDL2.so
-bin/atividade4: /usr/lib64/libSDL2_image.so
-bin/atividade4: examples/atividade4/CMakeFiles/atividade4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../bin/atividade4"
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/cmake -E remove_directory /home/maracaja/Programacao/CG/Atividade4/build/bin/atividade4
+/home/maracaja/Programacao/CG/Atividade4/public/atividade4.js: examples/atividade4/CMakeFiles/atividade4.dir/main.cpp.o
+/home/maracaja/Programacao/CG/Atividade4/public/atividade4.js: examples/atividade4/CMakeFiles/atividade4.dir/window.cpp.o
+/home/maracaja/Programacao/CG/Atividade4/public/atividade4.js: examples/atividade4/CMakeFiles/atividade4.dir/chao.cpp.o
+/home/maracaja/Programacao/CG/Atividade4/public/atividade4.js: examples/atividade4/CMakeFiles/atividade4.dir/camera.cpp.o
+/home/maracaja/Programacao/CG/Atividade4/public/atividade4.js: examples/atividade4/CMakeFiles/atividade4.dir/build.make
+/home/maracaja/Programacao/CG/Atividade4/public/atividade4.js: abcg/libabcg.a
+/home/maracaja/Programacao/CG/Atividade4/public/atividade4.js: abcg/external/fmt/libfmt.a
+/home/maracaja/Programacao/CG/Atividade4/public/atividade4.js: abcg/external/imgui/libimgui.a
+/home/maracaja/Programacao/CG/Atividade4/public/atividade4.js: examples/atividade4/CMakeFiles/atividade4.dir/linkLibs.rsp
+/home/maracaja/Programacao/CG/Atividade4/public/atividade4.js: examples/atividade4/CMakeFiles/atividade4.dir/objects1
+/home/maracaja/Programacao/CG/Atividade4/public/atividade4.js: examples/atividade4/CMakeFiles/atividade4.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maracaja/Programacao/CG/Atividade4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable /home/maracaja/Programacao/CG/Atividade4/public/atividade4.js"
 	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/atividade4.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/cmake -E make_directory /home/maracaja/Programacao/CG/Atividade4/build/bin/atividade4.dir
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/cmake -E copy_directory /home/maracaja/Programacao/CG/Atividade4/examples/atividade4/assets /home/maracaja/Programacao/CG/Atividade4/build/bin/atividade4.dir/assets
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/cmake -E copy /home/maracaja/Programacao/CG/Atividade4/build/bin/atividade4 /home/maracaja/Programacao/CG/Atividade4/build/bin/atividade4.dir/atividade4
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/cmake -E remove /home/maracaja/Programacao/CG/Atividade4/build/bin/atividade4
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/cmake -E rename /home/maracaja/Programacao/CG/Atividade4/build/bin/atividade4.dir /home/maracaja/Programacao/CG/Atividade4/build/bin/atividade4
-	cd /home/maracaja/Programacao/CG/Atividade4/build/examples/atividade4 && /usr/bin/cmake -E rm -rf /home/maracaja/Programacao/CG/Atividade4/build/bin/atividade4.dir
 
 # Rule to build all files generated by this target.
-examples/atividade4/CMakeFiles/atividade4.dir/build: bin/atividade4
+examples/atividade4/CMakeFiles/atividade4.dir/build: /home/maracaja/Programacao/CG/Atividade4/public/atividade4.js
 .PHONY : examples/atividade4/CMakeFiles/atividade4.dir/build
 
 examples/atividade4/CMakeFiles/atividade4.dir/clean:
